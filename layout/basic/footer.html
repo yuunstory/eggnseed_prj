@@ -9,19 +9,19 @@
     <li>
       <a href="/"><!--@import(/svg/icon-home.html)-->홈</a>
     </li>
-    <li module="Layout_stateLogon">
-      <a href="/order/basket.html"></a>
-        <!--@import(/svg/icon-cart.html)-->
-        Cart
+    <li module="Layout_stateLogon" class="basket">
+    <a href="/order/basket.html"></a>
+    <!--@import(/svg/icon-cart.html)-->
+    Cart
         <span class="count {$basket_count_display|display} {$basket_count_display_class}"
           ><span class="{$basket_count_class}">{$basket_count}</span></span
         ></a
       >
     </li>
-    <li module="Layout_stateLogoff">
-      <a href="/order/basket.html">
-        <!--@import(/svg/icon-cart.html)-->
-        Cart
+    <li module="Layout_stateLogoff" class="basket">
+    <a href="/order/basket.html">
+    <!--@import(/svg/icon-cart.html)-->
+    Cart
         <span class="count {$basket_count_display|display} {$basket_count_display_class}"
           ><span class="{$basket_count_class}">{$basket_count}</span></span
         ></a
