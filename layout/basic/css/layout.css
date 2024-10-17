@@ -1271,7 +1271,7 @@ a:hover {
     align-items: center;
     margin: 0;
     height: auto;
-    flex-basis: 80%;
+    flex-basis: auto;
     order: 2;
     overflow: hidden;
   }
