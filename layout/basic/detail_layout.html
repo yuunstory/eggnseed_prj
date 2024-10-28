@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- PG크로스브라우징필수내용 -->
     <meta http-equiv="Cache-Control" content="no-cache" />
@@ -11,7 +11,8 @@
     <!-- // PG크로스브라우징필수내용 -->
 
     <title>기본 레이아웃</title>
-    <!--@css(/layout/basic/css/common.css)--><!-- 해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요. -->
+    <!--@css(/layout/basic/css/common.css)-->
+    <!-- 해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요. -->
     <!--@css(/layout/basic/css/layout.css)-->
     <!--@css(/layout/basic/css/ec-base-ui.css)-->
     <!--@css(/layout/basic/css/ec-base-button.css)-->
@@ -28,41 +29,44 @@
     <!--@js(/layout/basic/js/layout.js)-->
     <!--@js(/js/common.js)-->
     <!--@js(/js/module/layout/quick_view.js)-->
-</head>
-<body id="detail">
-<div id="skipNavigation">
-    <p><a href="#category">전체상품목록 바로가기</a></p>
-    <p><a href="#contents">본문 바로가기</a></p>
-</div>
+  </head>
+  <body id="detail">
+    <div id="skipNavigation">
+      <p><a href="#category">전체상품목록 바로가기</a></p>
+      <p><a href="#contents">본문 바로가기</a></p>
+    </div>
 
-<div id="wrap">
-    <!--@import(/layout/basic/topbanner.html)-->
-    <header id="header">
+    <div id="wrap">
+      <!--@import(/layout/basic/topbanner.html)-->
+      <header id="header">
         <div class="inner">
-            <div class="topArea">
-                <div module="Layout_LogoTop" class="topArea__logo">
-                    <!--@css(/css/module/layout/logotop.css)-->
-                    <a href="/index.html"><img src="{$logo}" alt="{$mall_name}" /></a>
-                </div>
-                <!--@import(/layout/basic/state_login.html)-->
+          <div class="topArea">
+            <div module="Layout_LogoTop" class="topArea__logo">
+              <!--@css(/css/module/layout/logotop.css)-->
+              <a href="/index.html"><img src="{$logo}" alt="{$mall_name}" /></a>
             </div>
-            <!--@import(/layout/basic/navigation.html)-->
+            <!--@import(/layout/basic/state_login.html)-->
+          </div>
+          <!--@import(/layout/basic/navigation.html)-->
         </div>
-    </header><hr class="layout" />
-    
-    <!--@import(/layout/basic/sidebar.html)-->
-    <div id="container">
-        <div id="contents">
-            <!--@contents-->
-            <span module="Layout_MobileAction" class="RTMB">
-                <a href="#none" onclick="{$go_back}"><!--@import(/svg/icon-go-back.html)--><span>뒤로가기</span></a>
-            </span>
-        </div><hr class="layout" />
+      </header>
+      <hr class="layout" />
 
-    </div><hr class="layout" />
-    
+      <!--@import(/layout/basic/sidebar.html)-->
+      <div id="container">
+        <div id="contents">
+          <!--@contents-->
+          <span module="Layout_MobileAction" class="RTMB">
+            <a href="#none" onclick="{$go_back}"><!--@import(/svg/icon-go-back.html)--><span>뒤로가기</span></a>
+          </span>
+        </div>
+        <hr class="layout" />
+      </div>
+      <hr class="layout" />
+    </div>
+    <!-- #wrap 닫는 태그 추가 -->
     <!--@import(/layout/basic/quick.html)-->
-    
+
     <!--@import(/layout/basic/footer.html)-->
-</body>
+  </body>
 </html>

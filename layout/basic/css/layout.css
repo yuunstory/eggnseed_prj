@@ -46,6 +46,7 @@ body {
   margin: 0;
   max-width: 1760px;
   /* box-sizing: border-box; */
+  color: #333333;
 }
 #container {
   width: 100%;
