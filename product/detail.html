@@ -125,7 +125,7 @@
           <p>{$summary_desc} 상품 요약 설명</p>
         </div>
         <div class="prdPrice">
-          <span class="sale_text">할인퍼센트</span>
+          <span class="sale_text"></span>
           <span>{$product_price|numberformat}원</span>
         </div>
       </div>
@@ -985,7 +985,7 @@
             onclick="{$action_wishlist}"
             id="actionWish"
           >
-            찜
+            <i data-feather="heart"></i>
           </button>
           <button
             type="button"
@@ -1088,10 +1088,10 @@
     <ul class="cboth title_detail">
       <li class="tab_open"><a href="#detail">상세정보</a></li>
       <li>
-        <a href="#review">상품후기 <span>{$review_count}</span></a>
+        <a href="#review">상품후기 <span>&#40;{$review_count}&#41;</span></a>
       </li>
       <li>
-        <a href="#qna">상품문의 <span>{$qna_count}</span></a>
+        <a href="#qna">상품문의 <span>&#40;{$qna_count}&#41;</span></a>
       </li>
       <li><a href="#guide">배송/교환/환불 안내</a></li>
     </ul>
@@ -1102,13 +1102,13 @@
   <div id="tabProduct" class="tabProduct display_tablet_only">
     <ul>
       <li class="selected"><a href="#prdDetail" target="_self">상세정보</a></li>
-      <li><a href="#prdInfo">구매안내</a></li>
       <li class="{$review_display|display}">
         <a href="#prdReview" name="use_review_mobile">상품후기 <span>{$review_count}</span></a>
       </li>
       <li class="{$qna_display|display}">
         <a href="#prdQnA" name="use_qna_mobile">상품문의 <span>{$qna_count}</span></a>
       </li>
+      <li><a href="#prdInfo">구매안내</a></li>
     </ul>
   </div>
 
@@ -1117,7 +1117,7 @@
 
     <div module="product_relation">
       <div class="relation">
-        <div class="relation_title">YOU MAY ALSO LIKE<span>함께 구매하면 좋을 관련상품 모음</span></div>
+        <div class="relation_title">YOU MAY ALSO LIKE<span>함께 구매하면 좋은 상품</span></div>
 
         <div module="product_relationlist" class="ec-base-product swiper-container relation_slide">
           <ul class="swiper-wrapper prdList">
@@ -1170,10 +1170,10 @@
       <ul class="cboth title_detail">
         <li><a href="#detail">상세정보</a></li>
         <li class="tab_open">
-          <a href="#review">상품후기 <span>{$review_count}</span></a>
+          <a href="#review">상품후기 <span>&#40;{$review_count}&#41;</span></a>
         </li>
         <li>
-          <a href="#qna">상품문의 <span>{$qna_count}</span></a>
+          <a href="#qna">상품문의 <span>&#40;{$qna_count}&#41;</span></a>
         </li>
         <li><a href="#guide">배송/교환/환불 안내</a></li>
       </ul>
@@ -1185,8 +1185,8 @@
       <div class="board_title">
         <h2>REVIEW</h2>
         <div class="ec-base-button">
-          <a href="{$review_list}" class="btnNormalFix">LIST</a>
-          <a href="{$review_write}" class="btnNormalFix">WRITE</a>
+          <!-- <a href="{$review_list}" class="btnNormalFix">LIST</a> -->
+          <a href="{$review_write}" class="btnNormalFix">리뷰 작성하기</a>
         </div>
       </div>
       <div class="contents">
@@ -1294,10 +1294,10 @@
       <ul class="cboth title_detail">
         <li><a href="#detail">상세정보</a></li>
         <li>
-          <a href="#review">상품후기 <span>{$review_count}</span></a>
+          <a href="#review">상품후기 <span>&#40;{$review_count}&#41;</span></a>
         </li>
         <li class="tab_open">
-          <a href="#qna">상품문의 <span>{$qna_count}</span></a>
+          <a href="#qna">상품문의 <span>&#40;{$qna_count}&#41;</span></a>
         </li>
         <li><a href="#guide">배송/교환/환불 안내</a></li>
       </ul>
@@ -1309,8 +1309,8 @@
       <div class="board_title">
         <h2>Q&amp;A</h2>
         <div class="ec-base-button">
-          <a href="{$qna_list}" class="btnNormalFix">LIST</a>
-          <a href="{$qna_write}" class="btnNormalFix">WRITE</a>
+          <!-- <a href="{$qna_list}" class="btnNormalFix">LIST</a> -->
+          <a href="{$qna_write}" class="btnNormalFix">문의하기</a>
         </div>
       </div>
       <div class="contents">
@@ -1404,10 +1404,10 @@
       <ul class="cboth title_detail">
         <li><a href="#detail">상세정보</a></li>
         <li>
-          <a href="#review">상품후기 <span>{$review_count}</span></a>
+          <a href="#review">상품후기 <span>&#40;{$review_count}&#41;</span></a>
         </li>
         <li>
-          <a href="#qna">상품문의 <span>{$qna_count}</span></a>
+          <a href="#qna">상품문의 <span>&#40;{$qna_count}&#41;</span></a>
         </li>
         <li class="tab_open"><a href="#guide">배송/교환/환불 안내</a></li>
       </ul>

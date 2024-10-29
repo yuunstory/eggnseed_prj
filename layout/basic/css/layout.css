@@ -3,7 +3,7 @@
 * {
   box-sizing: border-box;
 }
-/* html,
+html,
 body {
   margin: 0;
   padding: 0;
@@ -23,7 +23,7 @@ li {
   margin: 0;
   padding: 0;
   list-style: none;
-} */
+}
 a {
   text-decoration: none;
 }
@@ -42,10 +42,7 @@ html {
 }
 body {
   min-width: 100%;
-  padding: 0;
-  margin: 0;
   max-width: 1760px;
-  /* box-sizing: border-box; */
   color: #333333;
 }
 #container {
@@ -75,7 +72,6 @@ svg,
 video {
   max-width: 100%;
   height: auto;
-  box-sizing: border-box;
 }
 button {
   border: 0;
