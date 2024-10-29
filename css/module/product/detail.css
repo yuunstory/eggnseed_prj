@@ -102,6 +102,10 @@
   text-decoration: none;
 }
 
+.xans-product-detaildesign > table > tbody > tr {
+  display: flex;
+  align-items: flex-start;
+}
 .xans-product-detaildesign > table > tbody > tr:nth-child(-n + 3) {
   display: none;
 }
@@ -117,9 +121,8 @@
 }
 .xans-product-detail .infoArea tr {
   border-top: 1px solid #f4f4f4;
-  display: flex;
-  align-items: flex-start;
-  padding: 17px 0px 18px;
+  /* display: flex;
+  align-items: flex-start; */
 }
 
 .xans-product-detail .infoArea th {
@@ -127,9 +130,11 @@
   width: 128px;
   text-align: left;
   vertical-align: top;
+  padding: 18px 0;
 }
 .xans-product-detail .infoArea td {
   vertical-align: middle;
+  padding: 18px 0;
 }
 .xans-product-detail .infoArea img {
   vertical-align: middle;
@@ -665,9 +670,9 @@
   text-align: center;
 }
 #totalProducts table .right {
-  width: 100px;
   font-weight: 500;
   text-align: right;
+  padding-right: 20px;
 }
 
 #totalProducts thead {
@@ -691,18 +696,31 @@
   font-weight: normal;
 }
 
-#totalProducts tbody tr.option_product {
+#totalProducts tbody tr {
   position: relative;
   width: 100%;
-  border: 1px solid #e9e9e9;
+  border-top: 1px solid #e9e9e9;
+  border-left: 1px solid #e9e9e9;
+  border-right: 1px solid #e9e9e9;
   border-radius: 6px;
-  justify-content: space-between;
-  padding: 20px 60px 20px 20px;
   background: #f9f9f9;
+}
+#totalProducts tbody tr.option_product {
+  border-bottom: 1px solid #e9e9e9;
+}
+#totalProducts tbody tr.option_product > td:first-child {
+  padding: 20px;
+}
+#totalProducts tbody tr.option_product > td:last-child {
+  padding: 20px 60px 20px 0;
+}
+
+.xans-product-detail .infoArea #totalProducts > table > tbody > tr > td:first-child {
+  width: 45%;
+  padding: 20px;
 }
 
 #totalProducts tbody td {
-  /* padding: 30px 0; */
   line-height: 18px;
   vertical-align: middle;
   word-wrap: break-word;
@@ -732,7 +750,6 @@
   width: 103px !important;
   padding: 0 30px;
   vertical-align: top;
-  box-sizing: border-box;
 }
 #totalProducts .quantity input {
   width: 45px;
@@ -1426,7 +1443,6 @@
   #totalPrice {
     padding: 40px 0 26px;
     margin-top: 20px;
-    border-top: 1px solid #f4f4f4;
   }
   #orderFixArea {
     display: none !important;
@@ -1666,13 +1682,15 @@
 }
 .xans-product-action .action_button .sub_sold {
   flex: 1;
-  background-color: #000;
+  background-color: #aaa;
   color: #fff;
   font-size: 16px;
-  line-height: 66px;
-  font-weight: 400;
+  line-height: 56px;
+  font-weight: 500;
   text-align: center;
+  border-radius: 4px;
 }
+
 .mrt10 {
   margin-top: 10px;
 }
@@ -2113,6 +2131,11 @@
   }
   .xans-product-action .soldout {
     margin: 0;
+  }
+
+  /* 품절 버튼 */
+  .xans-product-action .action_button .sub_sold {
+    line-height: 50px;
   }
 
   /* 관련상품 */

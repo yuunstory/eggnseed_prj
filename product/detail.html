@@ -866,9 +866,9 @@
             상품 목록
           </caption>
           <!-- <colgroup>
-            <col style="width: auto" />
-            <col style="width: auto" />
-            <col style="width: 120px" />
+            <col style="width: 50%" />
+            <col style="width: 20%" />
+            <col style="width: 30%" />
           </colgroup> -->
           <thead>
             <tr>
@@ -978,7 +978,6 @@
           ec-data-price="{$product_price}"
         ></div>
         <div class="{$action_display|display} action_button">
-          <span class="sub_sold {$soldout_display|display}">SOLD OUT</span>
           <button
             type="button"
             class="btnNormal sizeL actionWish {$wishlist_display|display}"
@@ -995,12 +994,12 @@
           >
             장바구니
           </button>
-
           <a href="#none" class="btnSubmit sizeL {$buy_display|display}" onclick="{$action_buy}"
             ><span id="{$btn_buy_mobile_id}">구매하기</span
             ><span class="{$btn_reserve_class|display}" id="{$btn_reserve_mobile_id}">예약주문</span
             ><span id="{$btn_regular_delivery_id}" class="{$btn_regular_delivery|display}">정기배송</span></a
           >
+          <span class="sub_sold {$soldout_display|display}">SOLD OUT</span>
         </div>
         <div class="ec-base-button soldout {$action_soldout_display|display}">
           <button type="button" class="btnSubmit gFull sizeL {$soldout_display|display}">SOLD OUT</button>
