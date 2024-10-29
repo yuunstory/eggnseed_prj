@@ -1051,14 +1051,14 @@
       </div>
       <div module="product_action" class="ec-base-button gFixed" id="orderFixArea">
         <div class="ec-base-button gColumn {$action_display|display}">
+          <button type="button" class="btnNormal sizeM actionCart {$basket_display|display}" onclick="{$action_basket}">
+            장바구니
+          </button>
           <a href="#none" class="btnSubmit sizeM {$buy_display|display}" onclick="{$action_buy}"
-            ><span id="{$btn_buy_mobile_id}">BUY IT NOW</span
+            ><span id="{$btn_buy_mobile_id}">구매하기</span
             ><span class="{$btn_reserve_class|display}" id="{$btn_reserve_mobile_id}">예약주문</span
             ><span id="{$btn_regular_delivery_id}" class="{$btn_regular_delivery|display}">REGULAR DELIVERY</span></a
           >
-          <button type="button" class="btnNormal sizeM actionCart {$basket_display|display}" onclick="{$action_basket}">
-            CART
-          </button>
         </div>
         <div class="ec-base-button gColumn {$action_soldout_display|display}">
           <button type="button" class="btnSubmit sizeM {$soldout_display|display}">SOLD OUT</button>
@@ -1093,7 +1093,7 @@
       <li>
         <a href="#qna">상품문의 <span>&#40;{$qna_count}&#41;</span></a>
       </li>
-      <li><a href="#guide">배송/교환/환불 안내</a></li>
+      <li><a href="#guide">구매안내</a></li>
     </ul>
     <!-- //title_detail -->
   </div>
@@ -1103,10 +1103,10 @@
     <ul>
       <li class="selected"><a href="#prdDetail" target="_self">상세정보</a></li>
       <li class="{$review_display|display}">
-        <a href="#prdReview" name="use_review_mobile">상품후기 <span>{$review_count}</span></a>
+        <a href="#prdReview" name="use_review_mobile">상품후기 <span>&#40;{$review_count}&#41;</span></a>
       </li>
       <li class="{$qna_display|display}">
-        <a href="#prdQnA" name="use_qna_mobile">상품문의 <span>{$qna_count}</span></a>
+        <a href="#prdQnA" name="use_qna_mobile">상품문의 <span>&#40;{$qna_count}&#41;</span></a>
       </li>
       <li><a href="#prdInfo">구매안내</a></li>
     </ul>
@@ -1175,7 +1175,7 @@
         <li>
           <a href="#qna">상품문의 <span>&#40;{$qna_count}&#41;</span></a>
         </li>
-        <li><a href="#guide">배송/교환/환불 안내</a></li>
+        <li><a href="#guide">구매안내</a></li>
       </ul>
       <!-- //title_detail -->
     </div>
@@ -1299,7 +1299,7 @@
         <li class="tab_open">
           <a href="#qna">상품문의 <span>&#40;{$qna_count}&#41;</span></a>
         </li>
-        <li><a href="#guide">배송/교환/환불 안내</a></li>
+        <li><a href="#guide">구매안내</a></li>
       </ul>
       <!-- //title_detail -->
     </div>
@@ -1409,7 +1409,7 @@
         <li>
           <a href="#qna">상품문의 <span>&#40;{$qna_count}&#41;</span></a>
         </li>
-        <li class="tab_open"><a href="#guide">배송/교환/환불 안내</a></li>
+        <li class="tab_open"><a href="#guide">구매안내</a></li>
       </ul>
       <!-- //title_detail -->
     </div>

@@ -48,6 +48,7 @@
   line-height: 0;
 }
 .xans-product-detail .imgArea .thumbnail .wish img {
+  display: none;
   width: auto !important;
   position: absolute;
   top: 10px;
@@ -1648,7 +1649,7 @@
   gap: 8px;
 }
 .xans-product-action .action_button .actionCart,
-.btnSubmit {
+.xans-product-action .action_button .btnSubmit {
   flex: 1;
   max-width: calc((100% - 56px) / 2);
 }
@@ -1733,7 +1734,7 @@
   margin: 30px -4.2% 20px -4.2%;
   position: sticky;
   top: 60px;
-  z-index: 999;
+  z-index: 990;
 }
 .tabProduct ul {
   margin: 0;
@@ -1743,16 +1744,15 @@
   border: 0;
   flex: 1;
   text-align: center;
+  font-size: 14px;
 }
 .tabProduct li a {
   position: relative;
   display: block;
-  color: #555;
   background-color: #fff;
-  border: 1px solid #e8e8e8;
-  border-bottom: 1px solid #1a1a1a;
+  /* border: 1px solid #e8e8e8;
+  border-bottom: 1px solid #1a1a1a; */
   border-left: 0;
-  box-sizing: border-box;
   line-height: 48px;
 }
 .tabProduct li.selected {
@@ -1761,8 +1761,7 @@
 .tabProduct li.selected a {
   color: #1a1a1a;
   background-color: #fff;
-  border: 1px solid #1a1a1a;
-  border-bottom: 0;
+  border-bottom: 2px solid #1a1a1a;
 }
 .tabProduct li:first-child a {
   border-left: 0;
@@ -1876,7 +1875,7 @@
   margin: 0;
 }
 .board_title .ec-base-button a {
-  min-width: 110px;
+  width: 120px;
 }
 
 /* 안내 */
@@ -1995,6 +1994,7 @@
   color: #1a1a1a;
 }
 
+/* ------------ MOBILE/TABLET ------------  */
 @media all and (max-width: 1024px) {
   /* 상세페이지 */
   .xans-product-detail {
@@ -2090,9 +2090,9 @@
     flex-wrap: wrap;
   }
   .xans-product-action .action_button .btnNormal {
-    flex: 1;
-    height: 66px;
-    padding: 23px 0;
+    /* flex: 1; */
+    /* height: 66px;
+    padding: 23px 0; */
   }
   .xans-product-action .action_button .btnSubmit {
     flex: none;
@@ -2103,10 +2103,13 @@
     margin-left: 0;
   }
   .xans-product-action .action_button .actionWish {
-    margin-left: 12px !important;
+    /* margin-left: 12px !important; */
+  }
+  .xans-product-action .action_button .btnNormal.actionWish {
+    padding: 12px 0;
   }
   .xans-product-action.ec-base-button.gFixed [class^='btn'].sizeM {
-    font-weight: 400;
+    font-weight: 500;
   }
   .xans-product-action .soldout {
     margin: 0;
@@ -2162,7 +2165,7 @@
     margin: 0 0 20px 0;
   }
   .board_title .ec-base-button a {
-    width: 80px;
+    /* width: 80px; */
   }
   .xans-product-additional .typeList .boardComment li {
     padding: 25px 25px 25px 36px;

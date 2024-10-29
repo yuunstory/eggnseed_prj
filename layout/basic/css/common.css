@@ -39,10 +39,10 @@ html {
 }
 body,
 code {
-  font-size: 13px;
+  font-size: 14px;
   font-family: Arial, 'Apple SD Gothic Neo', 'Noto Sans Regular', '맑은 고딕', 'malgun gothic', '돋움', 'dotum',
     sans-serif;
-  color: #000;
+  color: #333333;
   color: var(--font-color-base);
   background: #fff;
 }
