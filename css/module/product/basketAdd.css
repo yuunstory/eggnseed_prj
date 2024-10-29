@@ -1,1 +1,13 @@
-.xans-product-basketadd .content p { font-weight:bold; color:#2e2e2e; }
+.xans-product-basketadd .content p {
+  font-weight: bold;
+  color: #2e2e2e;
+}
+
+/* 추가 디자인 */
+.keepShopping,
+.moveBasket {
+  width: 100px;
+}
+.moveBasket {
+  margin-left: 10px;
+}
