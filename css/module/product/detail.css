@@ -2084,6 +2084,10 @@
     text-align: center;
   }
 
+  .xans-product-detail .xans-product-option tr:first-child td {
+    padding: 0 0 20px;
+  }
+
   /* 세일박스 */
   .xans-product-detail .infoArea table .sale_box {
     width: 45px;

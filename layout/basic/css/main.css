@@ -773,7 +773,7 @@
 
   /* 메인 온라인 상품진열 */
   .main_product_slide {
-    width: 96%;
+    width: 50%;
     margin: 0 0 80px 4%;
   }
   .main_product_slide .main_title {
