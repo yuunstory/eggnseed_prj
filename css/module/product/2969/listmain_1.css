@@ -1,0 +1,56 @@
+/* 공통 */
+.xans-product-1 { margin:22px 0 0; }
+.xans-product-1 h2 { margin:0 0 16px; font-weight:normal; font-size:20px; font-family:Arial, "돋움", Dotum, sans-serif; color:#2e2e2e; text-align:center; }
+.xans-product-1 img { vertical-align:middle; }
+.xans-product-1 ul.prdList { display:table; width:100%; min-width:756px; margin:-20px 0 0; font-size:0; line-height:0; }
+.xans-product-1 ul.prdList li.item { display:inline-block; margin:20px 0; color:#757575; vertical-align:top; *display:inline; *zoom:1; }
+.xans-product-1 ul.prdList li.item .box { margin:0 auto; font-size:12px; line-height:18px; text-align:center; }
+.xans-product-1 ul.prdList li .color { overflow:hidden; display:inline-block; margin:3px 0 0 0; }
+.xans-product-1 ul.prdList.column3 li .color { width:176px; }
+.xans-product-1 ul.prdList.column4 li .color { width:116px; }
+.xans-product-1 ul.prdList.column5 li .color { width:76px; }
+.xans-product-1 ul.prdList li .chips { float:left; width:10px; height:10px; margin:0 2px 2px 0; border:1px solid #e3e3e3; font-size:0; line-height:0; }
+
+.xans-product-1 ul.prdList .thumb { margin:0 0 10px; border:1px solid #ececec; }
+.xans-product-1 ul.prdList .name { text-align:left; }
+.xans-product-1 ul.prdList .name a { color:#2e2e2e; }
+.xans-product-1 ul.prdList .name .title { font-weight:normal; }
+.xans-product-1 ul.prdList .status { margin:0 0 16px; padding:0 80px 4px 0; border-bottom:1px solid #e8e8e8; text-align:right; line-height:0; *zoom:1; }
+.xans-product-1 ul.prdList .status:after { content:""; display:block; clear:both; }
+.xans-product-1 ul.prdList .icon { float:left; text-align:left; }
+.xans-product-1 ul.prdList .icon img { margin:0 -3px 6px 0; }
+.xans-product-1 ul.prdList .button { margin:0 -80px 0 0; *zoom:1; }
+.xans-product-1 ul.prdList .button img { margin:0 0 6px -3px; cursor:pointer; }
+.xans-product-1 ul.prdList .button .option { display:inline; position:relative; *zoom:1; }
+.xans-product-1 ul.prdList .mileage { display:block; }
+.xans-product-1 ul.prdList span.grid { display:block; }
+
+.xans-product-listitem li { text-align:left; }
+
+/* 진열방식 */
+.xans-product-1 ul.column3 li.item { width:33.33%; }
+.xans-product-1 ul.column3 li.item .box { width:324px; }
+.xans-product-1 ul.column3 li.item .thumb { width:322px; height:322px; }
+.xans-product-1 ul.column4 li.item { width:25%; }
+.xans-product-1 ul.column4 li.item .box { width:240px; }
+.xans-product-1 ul.column4 li.item .thumb { max-width:238px; }
+.xans-product-1 ul.column5 li.item { width:20%; }
+.xans-product-1 ul.column5 li.item .box { width:189px; }
+.xans-product-1 ul.column5 li.item .thumb { max-width:187px; }
+
+/* module="product_ListItem" */
+.xans-product-1 .xans-product-listitem { margin:0; }
+.xans-product-1 .xans-product-listitem li .title { font-weight:normal; vertical-align:top; }
+.xans-product-1 .xans-product-listitem li .title span { vertical-align:top; }
+
+/* 할인기간 레이어 */
+.xans-product-1 .discountPeriod { display:inline-block; z-index:10; position:relative; width:55px; height:19px; vertical-align:middle; *zoom:1; *display:inline; }
+.xans-product-1 .discountPeriod .edge { position:absolute; left:50%; top:-6px; width:10px; height:6px; margin:0 0 0 -5px; font-size:0; line-height:0; background:url("http://img.echosting.cafe24.com/skin/base_ko_KR/common/ico_tip_edge.gif") no-repeat 0 0; }
+.xans-product-1 .layerDiscountPeriod { display:none; position:absolute; left:50%; top:26px; width:247px; margin:0 0 0 -124px; border:1px solid #565960; font-size:12px; background-color:#fff; }
+.xans-product-1 .layerDiscountPeriod strong.title { display:block; margin:0 0 12px; padding:0 35px 0 0; font-weight:bold; color:#2e2e2e; }
+.xans-product-1 .layerDiscountPeriod .content { padding:9px 10px 12px 14px; font-family:Verdana, "돋움", Dotum, sans-serif; }
+.xans-product-1 .layerDiscountPeriod .content p { margin:2px 0 0; font-size:11px; color:#000; line-height:16px; color:#757575; letter-spacing:-1px; }
+.xans-product-1 .layerDiscountPeriod .content p strong { font-weight:normal; font-size:12px; color:#2e2e2e; }
+.xans-product-1 .layerDiscountPeriod .content p strong span { font-size:11px; }
+.xans-product-1 .layerDiscountPeriod .close { position:absolute; right:14px; top:14px; }
+.xans-product-1 .layerDiscountPeriod .close img { cursor:pointer; }
