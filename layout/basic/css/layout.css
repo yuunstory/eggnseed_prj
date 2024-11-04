@@ -1115,8 +1115,8 @@ a:hover {
     justify-content: space-between;
     height: 52px;
     padding: 14px 26px 0;
-    box-sizing: border-box;
     background: #fff;
+    box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.1);
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     -webkit-transition: -webkit-transform 0.3s linear, padding-bottom 0.3s linear;
