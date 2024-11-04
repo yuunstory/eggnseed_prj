@@ -271,13 +271,14 @@ svg.icon {
 /* Form */
 input[type='text'],
 input[type='password'] {
+  width: 100%;
   height: 40px;
   line-height: 40px;
   padding: 2px 4px 2px 15px;
-  border: 1px solid #e0e0e0;
+  border: none;
+  /* border: 1px solid #e0e0e0; */
   color: var(--font-color-base);
-  font-size: 13px;
-  box-sizing: border-box;
+  font-size: 14px;
   outline: 1px;
 }
 input[type='button'],
@@ -421,9 +422,7 @@ label > input[type='checkbox'] {
   margin: 0 10px 0 0;
   vertical-align: middle;
 }
-label + label {
-  margin-left: 15px;
-}
+
 input[type='radio'] + label,
 input[type='checkbox'] + label {
   margin: 0 15px 0 10px;
@@ -771,7 +770,7 @@ span.noBorder input {
   .titleArea h3 {
     color: #000;
     color: var(--font-color-heading);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: normal;
   }
   .titleArea--middle {
@@ -791,7 +790,7 @@ span.noBorder input {
   .titleArea.titleArea--myshop h2 {
     color: #000;
     color: var(--font-color-heading);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: normal;
   }
   .titleArea .desc {

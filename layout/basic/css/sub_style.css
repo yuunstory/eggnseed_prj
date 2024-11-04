@@ -417,13 +417,11 @@
 .xans-member-login .login input[type='text'],
 .login input[type='password'] {
   height: 48px;
-  margin-bottom: 8px;
-  border: 1px solid #e3e3e3;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #dedede;
 }
 .xans-member-login .wrap_security {
   max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   justify-content: flex-end;
 }
@@ -432,7 +430,6 @@
   justify-content: center;
 }
 .xans-member-login .wrap_find div {
-  margin: 20px 0 0;
   padding: 0 10px;
   font-size: 14px;
 }
@@ -442,23 +439,20 @@
 }
 .xans-member-login .login__button {
   max-width: 400px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
-.xans-member-login .login__button div {
-  margin: 16px 0 0;
-  font-size: 14px;
-  color: #8a8a8a;
+.xans-member-login .login__button a {
+  margin-bottom: 10px;
   text-align: center;
 }
-.xans-member-login .login__button [class^='btn'].sizeL {
+.xans-member-login .login__button a[class^='btn'].sizeL {
   font-size: 16px;
   height: 56px;
-  padding: 19px 26px;
 }
-.xans-member-login [class^='btn'].gFull + [class^='btn'].gFull {
+/* .xans-member-login [class^='btn'].gFull + [class^='btn'].gFull {
   margin: 40px 0 0;
   border: 1px solid #1a1a1a;
-}
+} */
 .xans-member-login .login__util {
   display: flex;
   flex-direction: column;
@@ -567,9 +561,9 @@
 /* 비회원 주문조회 */
 .xans-myshop-orderhistorynologin {
   max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 30px auto;
   text-align: center;
+  border-top: 1px solid #1a1a1a;
 }
 .xans-myshop-orderhistorynologin .login {
   width: 100%;
@@ -578,7 +572,7 @@
 .login input[type='password'] {
   height: 48px;
   margin-bottom: 8px;
-  border: 1px solid #e3e3e3;
+  border-bottom: 1px solid #dedede;
 }
 .xans-myshop-orderhistorynologin .txt_nonmem_check {
   margin: 40px 0 8px;
@@ -596,6 +590,7 @@
 }
 .xans-myshop-orderhistorynologin .btnSubmit {
   margin: 24px 0 0px;
+  background-color: #1a1a1a;
 }
 
 /* 아이디찾기 */
@@ -848,6 +843,8 @@
 .xans-member-join .ec-base-table.typeWrite .ec-address input[type='text'],
 .xans-member-join .ec-base-table.typeWrite .ec-address select {
   width: 410px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
 }
 .xans-member-join .ec-base-table.typeWrite .ec-address .ec-address-zipcode input[type='text'] {
   width: 160px;
@@ -1304,7 +1301,6 @@ div.ec-base-help ul {
   margin: 0;
 }
 .myshopArea .xans-myshop-main h3 {
-  font-size: 16px;
 }
 .myshopArea .xans-myshop-main .menu li {
   margin: 10px 0 0 0;
@@ -2079,7 +2075,7 @@ div.ec-base-help ul {
 
   /* 비회원 주문조회 */
   .xans-myshop-orderhistorynologin {
-    max-width: 100%;
+    /* max-width: 100%; */
   }
   .xans-myshop-orderhistorynologin .login .txt_nonmem_check {
     margin: 40px 0 24px;
@@ -2332,7 +2328,7 @@ div.ec-base-help ul {
     border: 0;
   }
   .myshopArea .xans-myshop-main .menu li a {
-    font-size: 14px;
+    font-size: 15px;
     color: #6a6a6a;
     padding: 0;
   }

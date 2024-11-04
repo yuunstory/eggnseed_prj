@@ -75,6 +75,7 @@
 .ec-base-box.typeMember input[type='password'],
 .ec-base-box.typeMember select {
   width: 100%;
+  border-bottom: 1px solid #dedede;
 }
 .ec-base-box.typeMember .info {
   font-size: 13px;
