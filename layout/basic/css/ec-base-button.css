@@ -122,9 +122,9 @@ a[class^='btnBasic'] {
 [class^='btn'].gFull {
   width: 100%;
 }
-[class^='btn'].gFull + [class^='btn'].gFull {
+/* [class^='btn'].gFull + [class^='btn'].gFull {
   margin: 10px 0 0;
-}
+} */
 /* btnMore */
 .xans-product-listmore {
   text-align: center;
