@@ -1,26 +1,13 @@
-<div
-  class="main_top_banner ez-align-left"
-  data-ez-module="top-banner"
-  data-ez-align="left"
-  data-ez-role="style.color"
-  data-ez-display="visible"
-  data-ez="contents-0pe4w36-1"
->
+<div class="main_top_banner ez-align-left" data-ez-module="top-banner" data-ez-align="left" data-ez-role="style.color" data-ez-display="hidden" data-ez="contents-0pe4w36-1" style="display: none;">
   <div class="top_banner_box_inner">
     <div class="top_banner_text">
       <!-- 최상단 배너 수정하는곳 -->
-      <a data-ez-role="a" href="#" data-href="#" target="_self" style="color: black"
-        >첫 쇼핑을 지원하는 3,000원 할인 회원가입 쿠폰</a
-      >
+      <a data-ez-role="a" href="#" data-href="#" target="_self" style="color: black; font-weight: normal;">첫 쇼핑을 지원하는 3,000원 할인 회원가입 쿠폰</a>
     </div>
     <!-- //top_banner_text -->
 
     <div class="top_banner_close" data-ez-role="close">
-      <input type="checkbox" name="chkbox" id="top_banner_box_cloase" value="1" data-ez-role="disable-term" /><label
-        for="top_banner_box_cloase"
-        data-ez-role="disable-text"
-        >오늘 하루 보지 않기</label
-      >
+      <input type="checkbox" name="chkbox" id="top_banner_box_cloase" value="1" data-ez-role="disable-term"><label for="top_banner_box_cloase" data-ez-role="disable-text">오늘 하루 보지 않기</label>
       <i aria-hidden="true" class="icon icoClose">닫기</i>
     </div>
     <!-- //top_banner_close -->
@@ -69,10 +56,8 @@
             </li>
             <li class="{$use_like_product_cnt|display}">{$like_prd_tag}</li>
             <li class="{$use_basket_cnt|display}">
-              <a href="/order/basket.html"
-                >장바구니
-                <strong>{$basket_cnt}<span class="{$use_basket_price|display}">({$basket_price})</span></strong></a
-              >
+              <a href="/order/basket.html">장바구니
+                <strong>{$basket_cnt}<span class="{$use_basket_price|display}">({$basket_price})</span></strong></a>
             </li>
           </ul>
         </div>
@@ -101,7 +86,7 @@
 
     <div class="top_nav_box" id="top_nav_box">
       <div class="top_logo" module="Layout_LogoTop">
-        <a href="/"><img src="{$logo}" alt="{$mall_name}" /></a>
+        <a href="/"><img src="{$logo}" alt="{$mall_name}"></a>
       </div>
       <!-- //top_logo -->
       <div class="top_nav">
@@ -113,20 +98,13 @@
           <ul>
             <li><a href="/category/%EC%9C%A0%EC%A0%9C%ED%92%88/43/">유제품</a></li>
             <li>
-              <a href="/category/%ED%96%84-%E2%88%99-%EC%86%8C%EC%8B%9C%EC%A7%80-%E2%88%99-%EC%9C%A1%ED%8F%AC/42/"
-                >햄 ∙ 소시지 ∙ 육포</a
-              >
+              <a href="/category/%ED%96%84-%E2%88%99-%EC%86%8C%EC%8B%9C%EC%A7%80-%E2%88%99-%EC%9C%A1%ED%8F%AC/42/">햄 ∙ 소시지 ∙ 육포</a>
             </li>
             <li>
-              <a
-                href="/category/%EB%B0%9C%ED%9A%A8%EB%A9%B4-%E2%88%99-%EB%B0%9C%ED%9A%A8%EB%B9%B5-%E2%88%99-%EA%B3%81%EB%93%A4%EC%9E%84/44/"
-                >발효면 ∙ 발효빵 ∙ 곁들임</a
-              >
+              <a href="/category/%EB%B0%9C%ED%9A%A8%EB%A9%B4-%E2%88%99-%EB%B0%9C%ED%9A%A8%EB%B9%B5-%E2%88%99-%EA%B3%81%EB%93%A4%EC%9E%84/44/">발효면 ∙ 발효빵 ∙ 곁들임</a>
             </li>
             <li>
-              <a href="/category/%EA%B1%B4%EA%B0%95%EC%9D%8C%EB%A3%8C-%E2%88%99-%EB%B9%99%EA%B3%BC/45/"
-                >건강음료 ∙ 빙과</a
-              >
+              <a href="/category/%EA%B1%B4%EA%B0%95%EC%9D%8C%EB%A3%8C-%E2%88%99-%EB%B9%99%EA%B3%BC/45/">건강음료 ∙ 빙과</a>
             </li>
             <li><a href="/category/%EC%A0%9C%EA%B3%BC%EB%A5%98/46/">제과류</a></li>
             <li><a href="/category/%EA%B8%B0%ED%83%80/56/">기타</a></li>
@@ -138,12 +116,7 @@
       <div class="top_mypage">
         <a href="javascript:;" class="eSearch"><!--@import(/svg/icon-search.html)--></a>
         <a href="/myshop/index.html" class="myshop"><!--@import(/svg/icon-user.html)--></a>
-        <a href="/order/basket.html" class="basket" module="Layout_orderBasketcount"
-          ><!--@import(/svg/icon-cart.html)--><span
-            class="count {$basket_count_display|display} {$basket_count_display_class}"
-            ><span class="{$basket_count_class}">{$basket_count}</span></span
-          ></a
-        >
+        <a href="/order/basket.html" class="basket" module="Layout_orderBasketcount"><!--@import(/svg/icon-cart.html)--><span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a>
       </div>
       <!-- //top_mypage -->
     </div>
@@ -151,4 +124,4 @@
   </div>
   <!-- //inner -->
 </header>
-<!--#ez="1/10"-->
+<!--#ez="1/4"-->

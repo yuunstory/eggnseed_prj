@@ -2,50 +2,35 @@
 <!--@js(/layout/basic/js/main.js)-->
 <!--@css(/layout/basic/css/main.css)-->
 <!--@import(/smart-banner/shop1/smart-banner-admin-RES00005.html)-->
-<!-- <section
-  class="section main_icon_menu"
-  data-ez="module-10uvb3r-1"
-  data-ez-module="user-defined/1"
-  data-ez-name="USER DEFINED"
-  data-ez-type="plain"
-> -->
-<section class="section main_icon_menu" module="Layout_category">
+<section class="section main_icon_menu" module="Layout_category" data-ez="contents-1irglaf-1">
   <!-- /css/module/layout/category.css -->
   <ul>
     <li>
-      <a href="/product/list.html{$param}"
-        ><img src="/web/menu_icon/milk.png" alt="" /><span>{$name_or_img_tag}</span></a
-      >
+      <a href="/product/list.html{$param}"><img src="/web/menu_icon/milk.png" alt /><span>{$name_or_img_tag}</span></a>
+    </li>
+    <li>
+      <a href="/product/list.html{$param}"><img src="/web/menu_icon/meat.png" alt /><span>{$name_or_img_tag}</span></a>
+    </li>
+    <li>
+      <a href="/product/list.html{$param}"><img src="/web/menu_icon/bread.png" alt /><span>{$name_or_img_tag}</span></a>
+    </li>
+    <li>
+      <a href><img src="/web/menu_icon/oliveoil.png" alt /><span>양념/오일</span></a>
     </li>
     <li>
       <a href="/product/list.html{$param}"
-        ><img src="/web/menu_icon/meat.png" alt="" /><span>{$name_or_img_tag}</span></a
+        ><img src="/web/menu_icon/drinks.png" alt /><span>{$name_or_img_tag}</span></a
       >
     </li>
     <li>
-      <a href="/product/list.html{$param}"
-        ><img src="/web/menu_icon/bread.png" alt="" /><span>{$name_or_img_tag}</span></a
-      >
-    </li>
-    <li>
-      <a href=""><img src="/web/menu_icon/oliveoil.png" alt="" /><span>양념/오일</span></a>
-    </li>
-    <li>
-      <a href="/product/list.html{$param}"
-        ><img src="/web/menu_icon/drinks.png" alt="" /><span>{$name_or_img_tag}</span></a
-      >
-    </li>
-    <li>
-      <a href="/product/list.html{$param}"
-        ><img src="/web/menu_icon/candy.png" alt="" /><span>{$name_or_img_tag}</span></a
-      >
+      <a href="/product/list.html{$param}"><img src="/web/menu_icon/candy.png" alt /><span>{$name_or_img_tag}</span></a>
     </li>
   </ul>
 </section>
 <section
   class="section main_product_list"
   data-ez-module="product-list/1"
-  data-ez-layout="grid3 list_gallery"
+  data-ez-layout="grid3"
   data-ez="contents-1r92zgr-1"
 >
   <ez-prop data-version="1.0.0" type="layout">
@@ -60,12 +45,12 @@
   </ez-prop>
   <div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center">
     <!-- 메인 새로운신상품 타이틀 수정하는곳 -->
-    <div class="main_title_txt01" data-ez-role="title">NEW! ARRIVALS</div>
-    <div class="main_title_txt02" data-ez-role="subtitle">언제나 새로운 신상품</div>
+    <div class="main_title_txt01" data-ez-role="title">NEW</div>
+    <div class="main_title_txt02" data-ez-role="subtitle">언제나 새로운 상품</div>
   </div>
   <!-- //main_title -->
   <div data-ez-holder="product_listmain">
-    <div module="product_listmain_1" class="ec-base-product">
+    <div module="product_listmain_2" class="ec-base-product">
       <!--
 				$count = 3
 				$basket_result = /product/add_basket.html
@@ -73,11 +58,11 @@
 				$moreview = no
 				$cache = yes
 			-->
-      <ul class="prdList grid3 list_gallery" data-ez-role="layout ez-discount-tag">
+      <ul class="prdList grid3" data-ez-role="layout ez-discount-tag">
         <!--@import(/product/list_product.html)-->
       </ul>
     </div>
-    <div module="product_listmore_1" class="more">
+    <div module="product_listmore_2" class="more">
       <a href="#none" onclick="{$more_action}" class="btnMore">
         상품 더보기
         <div>
@@ -118,8 +103,8 @@
 
   <div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center">
     <!-- 온스토리 타이틀 수정하는곳 -->
-    <div class="main_title_txt01" data-ez-role="title">ON STORE!</div>
-    <div class="main_title_txt02" data-ez-role="desc">요즘 가장 핫한 상품 온스토어</div>
+    <div class="main_title_txt01" data-ez-role="title">지금 필요하지 않으세요?</div>
+    <div class="main_title_txt02" data-ez-role="desc">에그앤씨드가 추천하는 상품</div>
   </div>
   <!-- //main_title -->
 
@@ -130,17 +115,16 @@
         <a data-ez-role="a" href="#" target="_self">
           <picture>
             <source
-              srcset="/SkinImg/img/main_banner01_pc.png"
+              srcset="/shop1/skin-skin11/SkinImg/img/main_banner01_pc.png"
               media="(max-width: 1024px)"
               data-ez-role="img-pc"
-              loading="lazy"
-              ez-prevent="img"
+              data-ez-eb
             />
-            <img src="/SkinImg/img/main_banner01_pc.png" data-ez-role="img-mobile" loading="lazy" ez-prevent="img" />
+            <img src="/shop1/skin-skin11/SkinImg/img/main_banner01_pc.png" data-ez-role="img-mobile" />
           </picture>
           <div class="main_banner_txt">
             <div class="main_banner_txt01" data-ez-role="title" style="color: rgb(58, 58, 58)">
-              달콤상큼한 디저트를 만나보세요
+              쌀쌀해진 요즘, 쌍쌍화차 한 잔!
             </div>
             <div class="main_banner_more" data-ez-role="desc" style="color: rgb(154, 154, 154)">자세히 살펴보기</div>
           </div>
@@ -151,13 +135,12 @@
         <a data-ez-role="a" href="#" target="_self">
           <picture>
             <source
-              srcset="/SkinImg/img/main_banner02_pc.png"
+              srcset="/shop1/skin-skin11/SkinImg/img/main_banner02_pc.png"
               media="(max-width: 1024px)"
               data-ez-role="img-pc"
-              loading="lazy"
-              ez-prevent="img"
+              data-ez-eb
             />
-            <img src="/SkinImg/img/main_banner02_pc.png" data-ez-role="img-mobile" loading="lazy" ez-prevent="img" />
+            <img src="/shop1/skin-skin11/SkinImg/img/main_banner02_pc.png" data-ez-role="img-mobile" />
           </picture>
           <div class="main_banner_txt">
             <div class="main_banner_txt01" data-ez-role="title" style="color: rgb(58, 58, 58)">
@@ -172,13 +155,12 @@
         <a data-ez-role="a" href="#" target="_self">
           <picture>
             <source
-              srcset="/SkinImg/img/main_banner03_pc.png"
+              srcset="/shop1/skin-skin11/SkinImg/img/main_banner03_pc.png"
               media="(max-width: 1024px)"
               data-ez-role="img-pc"
-              loading="lazy"
-              ez-prevent="img"
+              data-ez-eb
             />
-            <img src="/SkinImg/img/main_banner03_pc.png" data-ez-role="img-mobile" loading="lazy" ez-prevent="img" />
+            <img src="/shop1/skin-skin11/SkinImg/img/main_banner03_pc.png" data-ez-role="img-mobile" />
           </picture>
           <div class="main_banner_txt">
             <div class="main_banner_txt01" data-ez-role="title" style="color: rgb(58, 58, 58)">
@@ -214,8 +196,8 @@
   <div class="main_product_inner">
     <div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center">
       <!-- 메인 베스트셀러 수정하는곳 -->
-      <div class="main_title_txt01" data-ez-role="title">BEST! SELLER</div>
-      <div class="main_title_txt02" data-ez-role="subtitle">베스트 셀러를 만나보세요</div>
+      <div class="main_title_txt01" data-ez-role="title">BEST</div>
+      <div class="main_title_txt02" data-ez-role="subtitle">고객님들이 사랑해주시는 상품을 모았어요</div>
     </div>
     <!-- //main_title -->
 
@@ -227,16 +209,6 @@
       </li>
       <li data-ez-role="tab-item">
         <button type="button" class="button" data-id="tabContent2" data-ez-role="name" data-name="새로운 카테고리">
-          새로운 카테고리
-        </button>
-      </li>
-      <li data-ez-role="tab-item">
-        <button type="button" class="button" data-id="tabContent3" data-ez-role="name" data-name="새로운 카테고리">
-          새로운 카테고리
-        </button>
-      </li>
-      <li data-ez-role="tab-item">
-        <button type="button" class="button" data-id="tabContent4" data-ez-role="name" data-name="새로운 카테고리">
           새로운 카테고리
         </button>
       </li>
@@ -301,62 +273,6 @@
         </div>
       </div>
     </div>
-
-    <div class="tabcontent" id="tabContent3" data-ez-role="content-item">
-      <div data-ez-holder="product_listmain">
-        <div module="product_listmain_3" class="ec-base-product">
-          <!--
-						$count = 100
-						$basket_result = /product/add_basket.html
-						$basket_option = /product/basket_option.html
-						$moreview = yes
-						$cache = yes
-					-->
-          <ul class="prdList grid4" data-ez-role="layout ez-discount-tag">
-            <!--@import(/product/list_product.html)-->
-          </ul>
-        </div>
-        <div module="product_listmore_3" class="more">
-          <a href="#none" onclick="{$more_action}" class="btnMore">
-            상품 더보기
-            <div>
-              (<span id="more_current_page_{$display_group}">{$current_page}</span>/<span
-                id="more_total_page_{$display_group}"
-                >{$total_page}</span
-              >)
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="tabcontent" id="tabContent4" data-ez-role="content-item">
-      <div data-ez-holder="product_listmain">
-        <div module="product_listmain_4" class="ec-base-product">
-          <!--
-						$count = 100
-						$basket_result = /product/add_basket.html
-						$basket_option = /product/basket_option.html
-						$moreview = yes
-						$cache = yes
-					-->
-          <ul class="prdList grid4" data-ez-role="layout ez-discount-tag">
-            <!--@import(/product/list_product.html)-->
-          </ul>
-        </div>
-        <div module="product_listmore_4" class="more">
-          <a href="#none" onclick="{$more_action}" class="btnMore">
-            상품 더보기
-            <div>
-              (<span id="more_current_page_{$display_group}">{$current_page}</span>/<span
-                id="more_total_page_{$display_group}"
-                >{$total_page}</span
-              >)
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
   </div>
   <!-- //content-list -->
 </section>
@@ -402,10 +318,12 @@
   data-ez-module="video/1"
   data-ez-role="style.background"
   data-ez="contents-1p82nsu-1"
+  data-ez-display="hidden"
+  style="display: none"
 >
   <div class="main_title">
-    <div class="main_title_txt01" data-ez-role="title">BRAND STORY</div>
-    <div class="main_title_txt02" data-ez-role="desc">친환경 식재료로 건강한 라이프스타일을 제안합니다.</div>
+    <div class="main_title_txt01" data-ez-role="title">EGG&amp;SEED STORY</div>
+    <div class="main_title_txt02" data-ez-role="desc">누구보다 유기농에 진심인 사람들</div>
   </div>
   <!-- //main_title -->
 
@@ -419,56 +337,6 @@
       allowfullscreen
       data-ez-rawsrc="https://m-img.cafe24.com/images/ec/sde/video/organic_1280x720.mp4"
     ></iframe>
-  </div>
-</section>
-<section
-  class="section main_product_list"
-  data-ez-module="product-list/1"
-  data-ez-layout="grid5"
-  data-ez="contents-10i1a97-1"
->
-  <ez-prop data-version="1.0.0" type="layout">
-    <ez-var data-prop="layout" data-namespace="ez.module.product-list.layout" data-type="array">
-      <ez-item data-id="grid3" data-name="일반3단형(PC 3열/MOBILE 1열)"></ez-item>
-      <ez-item data-id="grid4" data-name="일반4단형(PC 4열/MOBILE 2열)"></ez-item>
-      <ez-item data-id="grid5" data-name="일반5단형(PC 5열/MOBILE 2열)"></ez-item>
-      <ez-item data-id="grid3 list_gallery" data-name="이미지강조3단형(PC 3열/MOBILE 1열)"></ez-item>
-      <ez-item data-id="grid4 list_gallery" data-name="이미지강조4단형(PC 4열/MOBILE 2열)"></ez-item>
-      <ez-item data-id="grid5 list_gallery" data-name="이미지강조5단형(PC 5열/MOBILE 2열)"></ez-item>
-    </ez-var>
-  </ez-prop>
-
-  <div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center">
-    <!-- 메인 새로운신상품 타이틀 수정하는곳 -->
-    <div class="main_title_txt01" data-ez-role="title">MD'S CHOICE</div>
-    <div class="main_title_txt02" data-ez-role="subtitle">정성을 담아 선별한 건강식품</div>
-  </div>
-  <!-- //main_title -->
-
-  <div data-ez-holder="product_listmain">
-    <div module="product_listmain_1" class="ec-base-product">
-      <!--
-				$count = 10
-				$basket_result = /product/add_basket.html
-				$basket_option = /product/basket_option.html
-				$moreview = no
-				$cache = yes
-			-->
-      <ul class="prdList grid5" data-ez-role="layout ez-discount-tag">
-        <!--@import(/product/list_product.html)-->
-      </ul>
-    </div>
-    <div module="product_listmore_1" class="more">
-      <a href="#none" onclick="{$more_action}" class="btnMore">
-        상품 더보기
-        <div>
-          (<span id="more_current_page_{$display_group}">{$current_page}</span>/<span
-            id="more_total_page_{$display_group}"
-            >{$total_page}</span
-          >)
-        </div>
-      </a>
-    </div>
   </div>
 </section>
 <section
@@ -506,17 +374,16 @@
           OFFLINE STORE
         </div>
         <div class="main_map_banner_txt02" data-ez-role="desc" style="color: rgb(138, 138, 138)">
-          <p>매장에서는 고객 여러분을 따뜻하게 맞이하고</p>
-          <p>기프트 구매를 위한 맞춤형 컨설팅을 제공해드립니다.<br /><br /></p>
-          <p><span style="color: rgb(0, 0, 0)">운영시간 : 평일 09:00-18:00</span></p>
-          <p><span style="color: rgb(0, 0, 0)">서울특별시 동작구 보라매로0길 00</span></p>
+          <p>오프라인 매장에서 더 다양한 상품들을 만나보세요!<br /><br /></p>
+          <p><span style="color: rgb(0, 0, 0)">운영시간 : 평일 10:00-18:00</span></p>
+          <p><span style="color: rgb(0, 0, 0)">경기 안성시 삼죽면 서동대로 5980 1층</span></p>
         </div>
         <!-- //main_map_banner_txt02 -->
         <div class="main_long_banner_link">
-          <span class="displaynone" data-ez-role="address">서울특별시 동작구 보라매로0길 00</span
+          <span class="displaynone" data-ez-role="address">경기 안성시 삼죽면 서동대로 5980</span
           ><a
             data-ez-role="a"
-            href="https://www.google.com/maps/dir/서울특별시%20동작구%20보라매로0길%2000"
+            href="https://www.google.com/maps/dir/경기%20안성시%20삼죽면%20서동대로%205980"
             target="_blank"
             >VIEW MORE<i aria-hidden="true" class="icon icoPlus">+</i></a
           >
@@ -527,16 +394,16 @@
     <!-- //main_long_banner_txt -->
     <picture>
       <source
-        srcset="/SkinImg/img/main_map_pc.png"
+        srcset="/web/upload/ezst/image/ez-image-contents-0cg0s5u-1-16.jpg?v=1729168865108"
         media="(max-width: 1024px)"
         data-ez-role="img-pc"
-        loading="lazy"
-        ez-prevent="img"
+        data-ez-eb="/web/upload/ezst/image/ez-image-contents-0cg0s5u-1-16.edibotbanner.json"
       />
-      <img src="/SkinImg/img/main_map_pc.png" data-ez-role="img-mobile" loading="lazy" ez-prevent="img" />
+      <img src="/web/upload/ezst/image/ez-image-contents-0cg0s5u-1-16.jpg?v=1729168865108" data-ez-role="img-mobile" />
     </picture>
   </div>
   <!-- //main_map_banner -->
 </section>
+<!--@import(/smart-banner/shop1/smart-banner-admin-RES00007.html)-->
 <!--@define(cmc_log)-->
-<!--#ez="1/2"-->
+<!--#ez="1/82"-->
