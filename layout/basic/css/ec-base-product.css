@@ -1,5 +1,5 @@
 .ec-base-product {
-  margin: 22px 0 0;
+  margin: 40px 0 0;
 }
 .ec-base-product .title {
   margin: 0 0 17px;
@@ -23,13 +23,10 @@
 }
 
 .ec-base-product .prdList {
-  /* margin: 0 -10px 0; */
+  margin: 0 -10px 0;
   text-align: left;
   font-size: 0;
   line-height: 0;
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 30px; */
 }
 .ec-base-product .prdList > li {
   display: inline-block;
@@ -38,7 +35,7 @@
   vertical-align: top;
 }
 .ec-base-product .prdList .prdList__item {
-  /* margin: 0 10px; */
+  margin: 0 10px;
 }
 .ec-base-product .prdList .chk {
   position: absolute;
@@ -67,10 +64,20 @@
   position: relative;
   margin: 0 0 10px;
 }
+
 .ec-base-product .prdList .thumbnail a img {
   width: 100%;
   max-width: 100%;
-  box-sizing: border-box;
+  /* height: 195px; */
+  object-fit: cover;
+  border-radius: 4px;
+}
+.ec-base-product .prdList.grid3 .thumbnail a img {
+  height: 20vw;
+}
+.ec-base-product .prdList.grid4 .thumbnail a img,
+.ec-base-product .prdList.grid4_slide .thumbnail a img {
+  height: 20vw;
 }
 .ec-base-product .prdList .icon__box {
   position: absolute;
@@ -134,7 +141,7 @@
 .ec-base-product .prdList .description {
   margin: 20px 20px 0 0;
   padding: 0;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   text-align: left;
   white-space: normal;
@@ -144,9 +151,11 @@
   text-align: left;
   font-weight: normal;
 }
-.ec-base-product .prdList .description .name a {
-  color: #000;
-  font-size: 13px;
+.ec-base-product .prdList .description .name a span {
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: keep-all;
+  line-height: 1.25;
 }
 .ec-base-product .prdList .description span.grid {
   display: block;
@@ -419,6 +428,13 @@
   .ec-base-product .prdList .prdList__item {
     margin: 0 5px;
   }
+  .ec-base-product .prdList.grid3 .thumbnail a img {
+    height: 40vw;
+  }
+  .ec-base-product .prdList.grid4 .thumbnail a img,
+  .ec-base-product .prdList.grid4_slide .thumbnail a img {
+    height: 38vw;
+  }
 }
 
 /********************* Mobile / Tablet *********************/
@@ -459,6 +475,13 @@
   }
   .ec-base-product .prdList .prdList__item {
     margin: 0 8px;
+  }
+  .ec-base-product .prdList.grid3 .thumbnail a img {
+    height: 30vw;
+  }
+  .ec-base-product .prdList.grid4 .thumbnail a img,
+  .ec-base-product .prdList.grid4_slide .thumbnail a img {
+    height: 30vw;
   }
 }
 
