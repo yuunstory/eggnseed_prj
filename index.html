@@ -2,7 +2,12 @@
 <!--@js(/layout/basic/js/main.js)-->
 <!--@css(/layout/basic/css/main.css)-->
 <!--@import(/smart-banner/shop1/smart-banner-admin-RES00005.html)-->
-<section class="section main_icon_menu" module="Layout_category" data-ez="contents-1irglaf-1">
+<section
+  class="section main_icon_menu"
+  module="Layout_category"
+  data-ez="contents-1irglaf-1"
+  style="margin-bottom: 80px"
+>
   <!-- /css/module/layout/category.css -->
   <ul>
     <li>
@@ -32,6 +37,7 @@
   data-ez-module="product-list/1"
   data-ez-layout="grid3"
   data-ez="contents-1r92zgr-1"
+  style="margin-bottom: 80px"
 >
   <ez-prop data-version="1.0.0" type="layout">
     <ez-var data-prop="layout" data-namespace="ez.module.product-list.layout" data-type="array">
@@ -45,8 +51,8 @@
   </ez-prop>
   <div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center">
     <!-- 메인 새로운신상품 타이틀 수정하는곳 -->
-    <div class="main_title_txt01" data-ez-role="title">NEW</div>
-    <div class="main_title_txt02" data-ez-role="subtitle">언제나 새로운 상품</div>
+    <div class="main_title_txt01" data-ez-role="title">새로운 맛을 탐험하세요!</div>
+    <div class="main_title_txt02" data-ez-role="subtitle"></div>
   </div>
   <!-- //main_title -->
   <div data-ez-holder="product_listmain">
@@ -81,6 +87,7 @@
   data-ez-role="style.background"
   data-ez-item-length="3"
   data-ez="contents-0duv3w5-1"
+  style="margin-bottom: 80px"
 >
   <ez-prop data-version="1.0.0" type="layout">
     <ez-var data-prop="image" data-namespace="ez.module.image-gallery.image">
@@ -103,8 +110,8 @@
 
   <div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center">
     <!-- 온스토리 타이틀 수정하는곳 -->
-    <div class="main_title_txt01" data-ez-role="title">지금 필요하지 않으세요?</div>
-    <div class="main_title_txt02" data-ez-role="desc">에그앤씨드가 추천하는 상품</div>
+    <div class="main_title_txt01" data-ez-role="title">이런 상품 어때요?</div>
+    <div class="main_title_txt02" data-ez-role="desc"></div>
   </div>
   <!-- //main_title -->
 
@@ -177,11 +184,48 @@
   <!-- //main_3dan_banner -->
 </section>
 <section
+  class="section main_product_slide"
+  data-ez-module="product-list-slide/2"
+  data-ez-layout="grid4_slide"
+  data-ez="contents-00jct0s-1"
+  style="margin-bottom: 80px"
+>
+  <ez-prop data-version="1.0.0" type="layout">
+    <ez-var data-prop="layout" data-namespace="ez.module.product-list-slide.layout" data-type="array">
+      <ez-item data-id="grid3_slide" data-name="일반3단형(PC 3열/MOBILE 2열)"></ez-item>
+      <ez-item data-id="grid4_slide" data-name="일반4단형(PC 4열/MOBILE 2열)"></ez-item>
+      <ez-item data-id="grid5_slide" data-name="일반5단형(PC 5열/MOBILE 3열)"></ez-item>
+      <ez-item data-id="grid3_slide list_gallery" data-name="이미지강조3단형(PC 3열/MOBILE 2열)"></ez-item>
+      <ez-item data-id="grid4_slide list_gallery" data-name="이미지강조4단형(PC 4열/MOBILE 2열)"></ez-item>
+      <ez-item data-id="grid5_slide list_gallery" data-name="이미지강조5단형(PC 5열/MOBILE 3열)"></ez-item>
+    </ez-var>
+  </ez-prop>
+
+  <div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center">
+    <!-- 온라인 타이틀 수정하는곳 -->
+    <div class="main_title_txt01" data-ez-role="title">고객이 사랑한 선택</div>
+    <div class="main_title_txt02" data-ez-role="subtitle"></div>
+  </div>
+  <!-- //main_title -->
+
+  <div data-ez-holder="product_listmain">
+    <div module="product_listmain_1" class="ec-base-product swiper-container special_slide">
+      <ul class="swiper-wrapper prdList grid4_slide" data-ez-role="layout ez-discount-tag">
+        <!--@import(/product/list_product_slide.html)-->
+      </ul>
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </div>
+  <div class="swiper-button-prev swiper-button-prev-special_slide"></div>
+  <div class="swiper-button-next swiper-button-next-special_slide"></div>
+</section>
+<section
   class="section main_product_category"
   data-ez-module="product-list-category/2"
   data-ez-layout="grid4"
   data-ez="contents-06tboh4-1"
-  style="margin-bottom: 50px"
+  style="margin-bottom: 50px; display: none"
+  data-ez-display="hidden"
 >
   <ez-prop data-version="1.0.0" type="layout">
     <ez-var data-prop="layout" data-namespace="ez.module.product-list-category.layout" data-type="array">
@@ -203,12 +247,21 @@
 
     <ul class="main_product_tab" data-ez-role="tab-list">
       <li data-ez-role="tab-item">
-        <button type="button" class="button" data-id="tabContent1" data-ez-role="name" data-name="새로운 카테고리">
-          새로운 카테고리
-        </button>
+        <button type="button" class="button" data-id="tabContent1" data-ez-role="name" data-name="추천">추천</button>
       </li>
       <li data-ez-role="tab-item">
-        <button type="button" class="button" data-id="tabContent2" data-ez-role="name" data-name="새로운 카테고리">
+        <button type="button" class="button" data-id="tabContent2" data-ez-role="name" data-name="신상     ">
+          신상
+        </button>
+      </li>
+      <li data-ez-role="tab-item" data-id="tabContent1730768415135" data-name="새로운 카테고리">
+        <button
+          type="button"
+          class="button"
+          data-id="tabContent1730768415135"
+          data-ez-role="name"
+          data-name="새로운 카테고리"
+        >
           새로운 카테고리
         </button>
       </li>
@@ -273,45 +326,37 @@
         </div>
       </div>
     </div>
+    <div class="tabcontent" id="tabContent1730768415135" data-ez-role="content-item">
+      <div data-ez-holder="product_listmain">
+        <div module="product_listmain_1" class="ec-base-product">
+          <!--
+						$count = 100
+						$basket_result = /product/add_basket.html
+						$basket_option = /product/basket_option.html
+						$moreview = yes
+						$cache = yes
+					-->
+          <ul class="prdList grid4" data-ez-role="layout ez-discount-tag">
+            <!--@import(/product/list_product.html)-->
+          </ul>
+        </div>
+        <div module="product_listmore_1" class="more">
+          <a href="#none" onclick="{$more_action}" class="btnMore">
+            상품 더보기
+            <div>
+              (<span id="more_current_page_{$display_group}">{$current_page}</span>/<span
+                id="more_total_page_{$display_group}"
+                >{$total_page}</span
+              >)
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- //content-list -->
 </section>
 <!--@import(/smart-banner/shop1/smart-banner-admin-RES00006.html)-->
-<section
-  class="section main_product_slide"
-  data-ez-module="product-list-slide/2"
-  data-ez-layout="grid4_slide"
-  data-ez="contents-00jct0s-1"
->
-  <ez-prop data-version="1.0.0" type="layout">
-    <ez-var data-prop="layout" data-namespace="ez.module.product-list-slide.layout" data-type="array">
-      <ez-item data-id="grid3_slide" data-name="일반3단형(PC 3열/MOBILE 2열)"></ez-item>
-      <ez-item data-id="grid4_slide" data-name="일반4단형(PC 4열/MOBILE 2열)"></ez-item>
-      <ez-item data-id="grid5_slide" data-name="일반5단형(PC 5열/MOBILE 3열)"></ez-item>
-      <ez-item data-id="grid3_slide list_gallery" data-name="이미지강조3단형(PC 3열/MOBILE 2열)"></ez-item>
-      <ez-item data-id="grid4_slide list_gallery" data-name="이미지강조4단형(PC 4열/MOBILE 2열)"></ez-item>
-      <ez-item data-id="grid5_slide list_gallery" data-name="이미지강조5단형(PC 5열/MOBILE 3열)"></ez-item>
-    </ez-var>
-  </ez-prop>
-
-  <div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center">
-    <!-- 온라인 타이틀 수정하는곳 -->
-    <div class="main_title_txt01" data-ez-role="title">ONLY! ON</div>
-    <div class="main_title_txt02" data-ez-role="subtitle">오직 온라인에서만 만나보세요</div>
-  </div>
-  <!-- //main_title -->
-
-  <div data-ez-holder="product_listmain">
-    <div module="product_listmain_1" class="ec-base-product swiper-container special_slide">
-      <ul class="swiper-wrapper prdList grid4_slide" data-ez-role="layout ez-discount-tag">
-        <!--@import(/product/list_product_slide.html)-->
-      </ul>
-      <div class="swiper-scrollbar"></div>
-    </div>
-  </div>
-  <div class="swiper-button-prev swiper-button-prev-special_slide"></div>
-  <div class="swiper-button-next swiper-button-next-special_slide"></div>
-</section>
 <section
   class="section main_video ez-align-center"
   data-ez-align="center"
@@ -345,8 +390,9 @@
   data-ez-role="style.background"
   data-ez-align="center"
   data-ez-textsize="medium"
-  style="background-color: rgb(241, 233, 195)"
+  style="background-color: rgb(241, 233, 195); display: none"
   data-ez="contents-1olh9su-1"
+  data-ez-display="hidden"
 >
   <!-- 메인 텍스트배너 수정하는곳 -->
   <div class="main_text_title" data-ez-role="title" style="font-weight: bold; color: rgb(26, 26, 26)">JOIN EVENT</div>
@@ -360,6 +406,7 @@
   data-ez-module="map/1"
   data-ez-align="left"
   data-ez="contents-0cg0s5u-1"
+  style="margin-bottom: 80px"
 >
   <ez-prop data-version="1.0.0" type="layout">
     <ez-var data-prop="image" data-namespace="ez.module.map.image">
@@ -404,6 +451,5 @@
   </div>
   <!-- //main_map_banner -->
 </section>
-<!--@import(/smart-banner/shop1/smart-banner-admin-RES00007.html)-->
 <!--@define(cmc_log)-->
-<!--#ez="1/82"-->
+<!--#ez="1/78"-->

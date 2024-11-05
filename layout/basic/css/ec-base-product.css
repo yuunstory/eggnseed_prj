@@ -23,10 +23,13 @@
 }
 
 .ec-base-product .prdList {
-  margin: 0 -10px 0;
+  /* margin: 0 -10px 0; */
   text-align: left;
   font-size: 0;
   line-height: 0;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px; */
 }
 .ec-base-product .prdList > li {
   display: inline-block;
@@ -35,7 +38,7 @@
   vertical-align: top;
 }
 .ec-base-product .prdList .prdList__item {
-  margin: 0 10px;
+  /* margin: 0 10px; */
 }
 .ec-base-product .prdList .chk {
   position: absolute;
