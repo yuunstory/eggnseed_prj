@@ -1,12 +1,7 @@
 <!--@layout(/layout/basic/layout.html)-->
 <!--@js(/js/module/product/menucategory.js)-->
 <!--@css(/css/module/product/menupackage.css)-->
-<div
-  class="section path"
-  module="product_headcategory"
-  data-ez-module="product-head-breadcrumb/1"
-  data-ez="contents-0pfy4jw-1"
->
+<div class="section path" module="product_headcategory" data-ez-module="product-head-breadcrumb/1" data-ez="contents-0pfy4jw-1">
   <span>현재 위치</span>
   <ol>
     <li><a href="/">홈</a></li>
@@ -18,61 +13,40 @@
     </li>
   </ol>
 </div>
-<div
-  class="section titleArea"
-  module="product_headcategory"
-  data-ez-module="product-list-head-title/1"
-  data-ez="contents-0lvbyyz-1"
->
+<div class="section titleArea" module="product_headcategory" data-ez-module="product-list-head-title/1" data-ez="contents-0lvbyyz-1">
   <h2>{$title_text_or_image}</h2>
-  <span class="likeButton {$disp_likecate_class}"
-    ><button type="button">{$disp_likecate_icon}<strong>{$disp_likecate_count}</strong></button></span
-  >
+  <span class="likeButton {$disp_likecate_class}"><button type="button">{$disp_likecate_icon}<strong>{$disp_likecate_count}</strong></button></span>
 </div>
 <div class="section ec-base-tab typeMenu" data-ez-module="product-list-subcategory/1" data-ez="contents-13ljomg-1">
   <div class="display_tablet_only">
     <ul class="menuCategory menu">
       <li module="product_displaysubcategory" style="display:{$display};" class="{$selected}">
-        <a href="{$link_product_list_sub}" class="button"
-          >{$category_name} <span class="count {$product_count_display|display}">({$product_count})</span></a
-        ><a href="#none" class="iconWrap"></a>
+        <a href="{$link_product_list_sub}" class="button">{$category_name} <span class="count {$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a>
         <ul module="product_children">
           <li class="{$selected}">
-            <a href="{$link_product_list_sub}"
-              >{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a
-            ><a href="#none" class="iconWrap"></a>
+            <a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a>
             <div class="button">
               {$children_icon}
               <ul module="product_children" class="subCategory">
                 <li class="{$selected}">
-                  <a href="{$link_product_list_sub}"
-                    >{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a
-                  ><a href="#none" class="iconWrap"></a>
+                  <a href="{$link_product_list_sub}">{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a>
                 </li>
                 <li class="{$selected}">
-                  <a href="{$link_product_list_sub}"
-                    >{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a
-                  ><a href="#none" class="iconWrap"></a>
+                  <a href="{$link_product_list_sub}">{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a>
                 </li>
               </ul>
             </div>
           </li>
           <li class="{$selected}">
-            <a href="{$link_product_list_sub}"
-              >{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a
-            ><a href="#none" class="iconWrap"></a>
+            <a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a>
             <div class="button">
               {$children_icon}
               <ul module="product_children" class="subCategory">
                 <li class="{$selected}">
-                  <a href="{$link_product_list_sub}"
-                    >{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a
-                  ><a href="#none" class="iconWrap"></a>
+                  <a href="{$link_product_list_sub}">{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a>
                 </li>
                 <li class="{$selected}">
-                  <a href="{$link_product_list_sub}"
-                    >{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a
-                  ><a href="#none" class="iconWrap"></a>
+                  <a href="{$link_product_list_sub}">{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a>
                 </li>
               </ul>
             </div>
@@ -84,46 +58,32 @@
   <div class="display_pc_only">
     <ul class="menuCategory menu">
       <li module="product_displaycategory" style="display:{$display};" class="{$selected}">
-        <a href="{$link_product_list_sub}" class="button"
-          >{$category_name} <span class="count {$product_count_display|display}">({$product_count})</span></a
-        ><a href="#none" class="iconWrap"></a>
+        <a href="{$link_product_list_sub}" class="button">{$category_name} <span class="count {$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a>
         <ul module="product_children">
           <li class="{$selected}">
-            <a href="{$link_product_list_sub}"
-              >{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a
-            ><a href="#none" class="iconWrap"></a>
+            <a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a>
             <div class="button">
               {$children_icon}
               <ul module="product_children" class="subCategory">
                 <li class="{$selected}">
-                  <a href="{$link_product_list_sub}"
-                    >{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a
-                  ><a href="#none" class="iconWrap"></a>
+                  <a href="{$link_product_list_sub}">{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a>
                 </li>
                 <li class="{$selected}">
-                  <a href="{$link_product_list_sub}"
-                    >{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a
-                  ><a href="#none" class="iconWrap"></a>
+                  <a href="{$link_product_list_sub}">{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a>
                 </li>
               </ul>
             </div>
           </li>
           <li class="{$selected}">
-            <a href="{$link_product_list_sub}"
-              >{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a
-            ><a href="#none" class="iconWrap"></a>
+            <a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a>
             <div class="button">
               {$children_icon}
               <ul module="product_children" class="subCategory">
                 <li class="{$selected}">
-                  <a href="{$link_product_list_sub}"
-                    >{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a
-                  ><a href="#none" class="iconWrap"></a>
+                  <a href="{$link_product_list_sub}">{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a>
                 </li>
                 <li class="{$selected}">
-                  <a href="{$link_product_list_sub}"
-                    >{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a
-                  ><a href="#none" class="iconWrap"></a>
+                  <a href="{$link_product_list_sub}">{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a>
                 </li>
               </ul>
             </div>
@@ -133,25 +93,15 @@
     </ul>
   </div>
 </div>
-<div
-  module="product_headcategory"
-  data-ez-module="product-list-categoryimage/1"
-  class="section product_top_image"
-  data-ez="contents-0dolibk-1"
->
+<div module="product_headcategory" data-ez-module="product-list-categoryimage/1" class="section product_top_image" data-ez="contents-0dolibk-1">
   {$top_image1_tag}{$top_image2_tag}{$top_image3_tag}
 </div>
-<div
-  class="normalpackage_box section"
-  data-ez-module="product-normalpackage/1"
-  data-ez-layout="grid4"
-  data-ez="contents-1tlxr2j-1"
->
+<div class="normalpackage_box section" data-ez-module="product-normalpackage/1" data-ez-layout="grid4" data-ez="contents-1tlxr2j-1">
   <!--@import(/product/shoppQ/searchContent.html)-->
   <div module="product_normalpackage" class="product_scrollx">
     <!--@css(/css/module/product/listnormal.css)-->
     <!--@js(/js/module/product/normalmenu.js)-->
-    <ez-prop data-version="1.0.0">
+    <ez-prop data-version="1.0.0" type="layout">
       <ez-var data-prop="layout" data-namespace="ez.module.product-list.layout" data-type="array">
         <ez-item data-id="grid3" data-name="일반3단형(PC 3열/MOBILE 1열)"></ez-item>
         <ez-item data-id="grid4" data-name="일반4단형(PC 4열/MOBILE 2열)"></ez-item>
@@ -197,7 +147,7 @@
     <div data-ez-holder="product_list">
       <div module="product_listnormal" class="ec-base-product">
         <!--
-					$count = 20
+					$count = 10
 					※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
 					※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
 					$moreview = no
@@ -237,4 +187,4 @@
   </div>
   <!-- //product_normalpackage -->
 </div>
-<!--#ez="1/1"-->
+<!--#ez="1/8"-->
