@@ -30,8 +30,7 @@
 }
 .ec-base-product .prdList > li {
   display: inline-block;
-  margin: 0 0 18px;
-  color: #757575;
+  margin: 0 0 50px;
   vertical-align: top;
 }
 .ec-base-product .prdList .prdList__item {
