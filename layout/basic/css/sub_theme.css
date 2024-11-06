@@ -62,7 +62,7 @@ a[class^='btnNormal'] {
 }
 [class^='btnSubmit'],
 a[class^='btnSubmit'] {
-  background: #f93b1d;
+  background-color: #ea5514;
   color: #fff;
 }
 
