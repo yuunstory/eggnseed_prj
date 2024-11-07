@@ -64,7 +64,7 @@
       </div>
 
       <div class="ec-base-fold theme1 selected eToggle" module="Order_EmptyItem">
-        <div class="title">
+        <div class="title displaynone">
           <h3>장바구니 상품</h3>
         </div>
 
@@ -423,7 +423,7 @@
                   </div>
                   <div class="sumPrice">
                     <span class="label">주문금액</span>
-                    {$sum_price_front_head}<strong>{$sum_price_front}</strong>{$sum_price_front_tail}
+                    {$sum_price_front_head}<strong>{$sum_price_front}{$sum_price_front_tail}</strong>
                     <span class="{$sum_price_display|display}"
                       >{$sum_price_back_head}{$sum_price_back}{$sum_price_back_tail}</span
                     >
@@ -1855,7 +1855,7 @@
         <div module="Order_TotalSummary" class="{$area_delv_info_display|display} totalSummary" unroll="1">
           <div class="totalSummary__item">
             <div class="heading">
-              <h4 class="title">총 상품금액</h4>
+              <h4 class="title">상품금액</h4>
               <div class="data">
                 {$total_product_price_display_front_head}<strong>{$total_product_price_display_front}</strong>{$total_product_price_display_front_tail}
                 <span class="refer {$total_product_price_ref_display|display}"
@@ -1877,7 +1877,7 @@
 
           <div class="title shipping totalSummary__item">
             <div class="heading">
-              <h4 class="title">총 배송비</h4>
+              <h4 class="title">배송비</h4>
               <div class="data">
                 {$total_delv_price_front_head}<strong id="{$total_delv_price_front_id}"
                   >{$total_delv_price_front}</strong
@@ -1938,7 +1938,7 @@
             class="totalSummary__item {$total_benefit_layer_display|display}"
           >
             <div class="heading">
-              <h4 class="title">총 할인금액</h4>
+              <h4 class="title">할인금액</h4>
               <div class="data">
                 {$total_product_discount_price_front_head}<strong id="{$total_product_discount_price_front_id}"
                   >{$total_product_discount_price_front}</strong
@@ -2039,7 +2039,7 @@
           <h3 class="totalSummary__title">주문상품</h3>
           <div class="totalSummary__item">
             <div class="heading">
-              <h4 class="title">총 상품금액</h4>
+              <h4 class="title">상품금액</h4>
               <div class="data">
                 {$total_product_price_display_front_head}<strong>{$total_product_price_display_front}</strong>{$total_product_price_display_front_tail}
                 <span class="refer {$total_product_price_ref_display|display}"
@@ -2063,7 +2063,7 @@
             class="totalSummary__item {$total_benefit_layer_display|display}"
           >
             <div class="heading">
-              <h4 class="title">총 할인금액</h4>
+              <h4 class="title">할인금액</h4>
               <div class="data">
                 {$total_product_discount_price_front_head}<strong id="{$oversea_total_product_discount_price_front_id}"
                   >{$total_product_discount_price_front}</strong
@@ -2163,7 +2163,7 @@
               class="btnSubmit gFull sizeL {$buy_display|display}"
               link-order="/order/orderform.html{$param}"
               link-login="/member/login.html"
-              >전체상품 주문</a
+              >전체상품주문</a
             >
             <a
               href="#none"
@@ -2171,7 +2171,7 @@
               class="btnNormal gFull sizeL"
               link-order="/order/orderform.html{$param}"
               link-login="/member/login.html"
-              >선택상품 주문</a
+              >선택상품주문</a
             >
           </div>
           <!-- 네이버 체크아웃 구매 버튼  -->
@@ -2196,7 +2196,7 @@
       <a
         href="#none"
         onclick="{$action_order_select}"
-        class="btnNormal sizeM"
+        class="btnNormal sizeL"
         link-order="/order/orderform.html{$param}"
         link-login="/member/login.html"
         >선택상품주문</a
@@ -2204,7 +2204,7 @@
       <a
         href="#none"
         onclick="{$action_order_all}"
-        class="btnSubmit sizeM {$buy_display|display}"
+        class="btnSubmit sizeL {$buy_display|display}"
         link-order="/order/orderform.html{$param}"
         link-login="/member/login.html"
         >전체상품주문</a
