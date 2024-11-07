@@ -740,20 +740,18 @@
 /* 버튼 */
 .ec-base-button [class^='btn'].sizeL {
   height: 56px;
-  padding: 0;
-  line-height: 56px;
+  /* padding: 0; */
+  /* line-height: 56px; */
   font-size: 16px;
 }
 .ec-base-button [class^='btn'].sizeM {
-  height: 50px;
+  height: 45px;
   padding: 0;
-  line-height: 50px;
+  line-height: 43px;
   font-size: 14px;
 }
 .ec-base-button [class^='btn'].sizeS {
-  height: 50px;
-  padding: 17px 20px;
-  line-height: 1;
+  padding: 0px 20px;
   font-size: 14px;
 }
 .ec-base-button.gBottom {
@@ -1301,6 +1299,7 @@ div.ec-base-help ul {
   margin: 0;
 }
 .myshopArea .xans-myshop-main h3 {
+  font-weight: 600;
 }
 .myshopArea .xans-myshop-main .menu li {
   margin: 10px 0 0 0;
@@ -1548,13 +1547,13 @@ div.ec-base-help ul {
   border-bottom: 1px solid #e8e8e8;
 }
 .xans-order-basketpackage .ec-base-prdInfo .btnDelete {
-  top: 33px;
+  top: 30px;
 }
 .xans-order-basketpackage .ec-base-prdInfo .prdBox {
   padding: 35px 0;
 }
 .xans-order-basketpackage .ec-base-prdInfo .thumbnail {
-  width: 120px;
+  width: 26%;
   height: auto;
   border: 0;
 }
@@ -1640,8 +1639,6 @@ div.ec-base-help ul {
 }
 .xans-order-basketpackage .ec-base-prdInfo .buttonGroup a {
   flex: 1;
-  height: auto;
-  padding: 16px 20px;
   font-weight: 400;
 }
 .xans-order-basketpackage .ec-base-prdInfo .buttonGroup [class^='btn'] + [class^='btn'] {
@@ -1660,10 +1657,7 @@ div.ec-base-help ul {
   font-weight: 400;
 }
 .xans-order-basketpackage .ec-base-button a {
-  height: 50px;
-  padding: 17px 20px;
   font-weight: 400;
-  font-size: 14px;
 }
 .xans-order-basketpackage .cart-total {
   width: 360px;
@@ -1681,29 +1675,16 @@ div.ec-base-help ul {
   margin-bottom: 16px;
 }
 .xans-order-basketpackage .totalSummary__item .title {
-  font-size: 16px;
-  color: #1a1a1a;
 }
 .xans-order-basketpackage .totalSummary__item .data {
-  font-size: 14px;
-  color: #1a1a1a;
 }
 .xans-order-basketpackage .totalSummary__item .data strong {
-  font-size: 16px;
-  font-weight: 400;
-  color: #1a1a1a;
 }
 .xans-order-basketpackage .totalSummary .total {
-  margin-top: 30px;
-  padding-top: 30px;
-  border-top: 1px solid #e8e8e8;
 }
 .xans-order-basketpackage .totalSummary .total .title {
-  font-size: 16px;
-  color: #1a1a1a;
 }
 .xans-order-basketpackage .totalSummary .paymentPrice {
-  color: #1a1a1a;
 }
 .xans-order-basketpackage .ec-base-prdEmpty {
   border-top: 0;
@@ -2562,9 +2543,6 @@ div.ec-base-help ul {
 
   /* 장바구니 */
   .xans-order-basketpackage .ec-base-prdInfo .thumbnail {
-    width: 80px;
-    height: auto;
-    border: 0;
   }
   .xans-order-basketpackage .ec-base-prdInfo .description .prdName img {
     height: 20px;
@@ -2587,6 +2565,7 @@ div.ec-base-help ul {
   }
   .xans-order-basketpackage .ec-base-button > div {
     display: flex;
+    gap: 6px;
     width: 100%;
   }
   .xans-order-basketpackage .ec-base-button a {
@@ -2793,7 +2772,7 @@ div.ec-base-help ul {
 
   /* 서브페이지 타이틀 */
   .titleArea h2 {
-    width: 85%;
+    /* width: 85%; */
   }
 }
 

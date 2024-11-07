@@ -25,7 +25,6 @@ a[class^='btnSubmit'] {
   padding: 12px 20px;
   height: 40px;
   font-size: 14px;
-  box-sizing: border-box;
   border: 1px solid transparent;
   border-radius: 4px;
   line-height: 1;
@@ -36,8 +35,8 @@ a[class^='btnSubmit'] {
   letter-spacing: 0;
   text-align: center;
   white-space: nowrap;
-  color: #fff;
-  background-color: #ea5514;
+  /* color: #fff;
+  background-color: #ea5514; */
 }
 [class^='btnEm'],
 a[class^='btnEm'] {
@@ -284,22 +283,20 @@ a[class^='btnBasic'] {
 @media all and (max-width: 1024px) {
   /* size */
   [class^='btn'].sizeS {
-    padding: 10px 20px;
+    padding: 0px 20px;
     height: 32px;
+    line-height: 30px;
     font-size: 12px;
   }
   [class^='btn'].sizeM {
-    padding: 14px 20px;
-    height: 45px;
-    font-size: 13px;
-    line-height: 18px;
+    padding: 12px 20px;
+    height: 40px;
+    font-size: 14px;
   }
   [class^='btn'].sizeL {
-    padding: 14px 26px;
-    height: 50px;
-    min-width: 80px;
+    padding: 0px 26px;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 54px;
     font-weight: 500;
   }
   /* width Fix */
@@ -328,7 +325,7 @@ a[class^='btnBasic'] {
     margin-right: 16px;
   }
   .ec-base-button [class^='btn'] + [class^='btn'] {
-    margin-left: 6px;
+    /* margin-left: 6px; */
   }
   /* gBottom */
   .ec-base-button.gBottom {
@@ -426,22 +423,22 @@ a[class^='btnBasic'] {
 @media all and (min-width: 1025px) {
   /* size */
   [class^='btn'].sizeS {
-    padding: 10px 20px;
+    padding: 0px 20px;
     height: 32px;
+    line-height: 30px;
     font-size: 12px;
   }
   [class^='btn'].sizeM {
-    padding: 13px 20px;
+    padding: 0px 20px;
     height: 40px;
-    font-size: 13px;
+    line-height: 38px;
+    font-size: 14px;
   }
   [class^='btn'].sizeL {
-    padding: 14px 26px;
+    padding: 0px 26px;
     height: 56px;
-    min-width: 80px;
-    font-size: 16px;
-    line-height: 28px;
-    font-weight: 500;
+    line-height: 54px;
+    font-weight: 600;
   }
   /* width Fix */
   [class^='btn'][class*='Fix'] {
