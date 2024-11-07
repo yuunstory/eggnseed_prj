@@ -1002,15 +1002,15 @@
           <span class="sub_sold {$soldout_display|display}">SOLD OUT</span>
         </div>
         <div class="ec-base-button soldout {$action_soldout_display|display}">
-          <button type="button" class="btnSubmit gFull sizeL {$soldout_display|display}">SOLD OUT</button>
           <button
             type="button"
-            class="btnNormal gFull sizeL {$wishlist_display|display}"
+            class="btnNormal gFull sizeL {$wishlist_display|display} actionWishSoldout"
             onclick="{$action_wishlist}"
             id="actionWishSoldout"
           >
-            WISH LIST
+            <i data-feather="heart"></i>
           </button>
+          <button type="button" class="btnSubmit sizeL gFull {$soldout_display|display}">SOLD OUT</button>
         </div>
         <a
           href="/board/inquiry/write.html{$inquiry_param}"
@@ -1060,15 +1060,15 @@
           >
         </div>
         <div class="ec-base-button gColumn {$action_soldout_display|display}">
-          <button type="button" class="btnSubmit sizeM {$soldout_display|display}">SOLD OUT</button>
-          <button
+          <!-- <button
             type="button"
             class="btnNormal sizeM {$wishlist_display|display}"
             onclick="{$action_wishlist}"
             id="actionWishSoldout"
           >
             WISH LIST
-          </button>
+          </button> -->
+          <button type="button" class="btnSubmit sizeM {$soldout_display|display} soldout">SOLD OUT</button>
         </div>
       </div>
     </div>
