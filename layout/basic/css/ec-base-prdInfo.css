@@ -28,6 +28,7 @@
 }
 .ec-base-prdInfo .thumbnail img {
   width: 100%;
+  border-radius: 5px;
 }
 .ec-base-prdInfo .description {
   -webkit-flex: 1;
@@ -37,11 +38,15 @@
 }
 .ec-base-prdInfo .description .prdName {
   display: block;
-  margin: 0 0 3px;
+  margin-bottom: 8px;
   font-weight: normal;
 }
 .ec-base-prdInfo .description .prdName a {
-  color: #000;
+  font-size: 16px;
+  line-height: 1.25;
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: keep-all;
 }
 .ec-base-prdInfo .description .prdName .ec-set-product-name {
   display: block;
@@ -54,14 +59,18 @@
 .ec-base-prdInfo .description .prdName .prdIcon {
   height: 18px;
 }
+.ec-base-prdInfo .description .price {
+  display: flex;
+}
 .ec-base-prdInfo .description .price,
 .ec-base-prdInfo .description .price li {
-  font-size: 13px;
+  font-size: 16px;
+  font-weight: 600;
   color: #000;
-  line-height: 20px;
+  line-height: 1.3;
+  padding-right: 6px;
 }
 .ec-base-prdInfo .description .price strong {
-  font-weight: normal;
 }
 .ec-base-prdInfo .description .price .refer {
   font-weight: normal;
@@ -133,8 +142,8 @@
   top: 20px;
   right: -5px;
   overflow: hidden;
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   margin: 0 auto;
   font-size: 1px;
   line-height: 0;
@@ -357,7 +366,7 @@
     padding: 0 0 0 125px;
   }
   .ec-base-prdInfo .btnDelete {
-    right: 12px;
+    right: 0px;
   }
   .ec-base-prdInfo .optionSelect {
     margin: 0 16px 24px;
