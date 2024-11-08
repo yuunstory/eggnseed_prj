@@ -42,6 +42,7 @@
 /* Table */
 .ec-base-table {
   border-top: 1px solid #000;
+  font-size: 16px;
 }
 .ec-base-table th,
 .ec-base-table td {
@@ -415,7 +416,7 @@
   }
   .ec-base-table.typeList th,
   .ec-base-table.typeList td {
-    padding: 15px 10px 16px;
+    padding: 20px 10px;
   }
   .ec-base-table.typeList th {
     border-bottom: 0;
