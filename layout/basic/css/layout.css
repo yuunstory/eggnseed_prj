@@ -1267,7 +1267,7 @@ a:hover {
     overflow: hidden;
   }
   #header .inner .top_nav_box .top_logo img {
-    max-width: 180px;
+    max-width: 108px;
     max-height: 40px;
   }
   #header .inner .top_nav_box .top_logo a {
@@ -1309,7 +1309,7 @@ a:hover {
     margin-right: -4px;
   }
   #header .inner .top_nav_box .top_mypage a .icon {
-    width: 25px;
+    width: 24px;
   }
   #header.fixed {
     -webkist-transform: translateY(0px);
