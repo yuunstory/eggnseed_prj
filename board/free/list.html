@@ -13,7 +13,6 @@
 
         <div class="titleArea">
             <h2>{$board_title} {$board_adult_icon}</h2>
-            <p>{$board_info}</p>
         </div>
         <p class="imgArea">{$board_top_image}</p>
     </div>
@@ -151,7 +150,7 @@
         <!--@css(/css/module/board/search.css)-->
         <fieldset class="boardSearch">
             <legend>게시물 검색</legend>
-            <div class="form">{$form.search_date} {$form.search_key} {$form.search} <a href="#none" class="btnNormal" onclick="{$action_search}">찾기</a></div>
+            <div class="form">{$form.search_date} {$form.search_key} {$form.search} <a href="#none" class="btnNormal board_search_btn" onclick="{$action_search}"><i data-feather="search"></i></a></div>
         </fieldset>
     </div>
 </div>

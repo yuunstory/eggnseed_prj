@@ -92,7 +92,8 @@
         <div class="ec-base-button gBottom gBreak">
             <span class="gLeft">
 				<a href="{$link_board_list}" class="btnNormalFix sizeM">목록</a>
-                <a href="#none" onclick="{$action_delete}" class="btnNormalFix sizeM {$delete_button_auth|display}">삭제</a>
+                <a href="#none" onclick="{$action_delete}" class="btnNormalFix sizeM 
+                {$delete_button_auth|display}">삭제</a>
                 <a href="/board/consult/modify.html{$param_modify}" class="btnNormalFix sizeM {$modify_button_auth|display}"">수정</a>
             </span>
 			<span class="gRight gBreak {$config.is_admin|display}"><a href="/board/consult/reply.html{$param_reply}" class="btnSubmitFix sizeM {$reply_button_auth|display}">답변</a></span>
