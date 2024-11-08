@@ -116,7 +116,7 @@
 
 .xans-product-detail .infoArea table {
   border: 0;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 .xans-product-detail .infoArea tr {
@@ -589,6 +589,7 @@
   position: relative;
   display: inline-block;
   width: 103px;
+  height: 30px;
   margin: 10px 0 0;
   padding: 0 30px;
   vertical-align: top;
@@ -672,7 +673,7 @@
 #totalProducts table .right {
   font-weight: 500;
   text-align: right;
-  padding-right: 20px;
+  /* padding-right: 20px; */
 }
 
 #totalProducts thead {
@@ -704,6 +705,9 @@
   border-right: 1px solid #e9e9e9;
   border-radius: 6px;
   background: #f9f9f9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 #totalProducts tbody tr.option_product {
   border-bottom: 1px solid #e9e9e9;
@@ -716,12 +720,15 @@
 }
 
 .xans-product-detail .infoArea #totalProducts > table > tbody > tr > td:first-child {
-  width: 45%;
-  padding: 20px;
+  /* width: 45%; */
+  /* padding: 20px; */
+  word-break: keep-all;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 #totalProducts tbody td {
-  line-height: 18px;
+  line-height: 24px;
   vertical-align: middle;
   word-wrap: break-word;
   word-break: break-all;
@@ -750,6 +757,7 @@
   width: 103px !important;
   padding: 0 30px;
   vertical-align: top;
+  background-color: #fff;
 }
 #totalProducts .quantity input {
   width: 45px;
@@ -1350,6 +1358,15 @@
     width: 88%;
     margin: 10px auto 0;
   }
+  .xans-product-action .action_button .actionCart,
+  .xans-product-action .action_button .btnSubmit {
+    height: 48px;
+    line-height: 46px;
+  }
+
+  #orderFixArea .soldout {
+    background-color: #d0d0d0;
+  }
 }
 
 /********************* PC *********************/
@@ -1465,6 +1482,12 @@
     margin: 0 0 0 -176px;
   }
 
+  .xans-product-action .action_button .actionCart,
+  .xans-product-action .action_button .btnSubmit {
+    height: 56px;
+    line-height: 54px;
+  }
+
   /* 적립금 자세히보기 */
   .xans-product-detail .mileage_tooltip {
     position: relative;
@@ -1545,7 +1568,7 @@
   display: none;
 }
 .xans-product-detail .infoArea table {
-  table-layout: fixed;
+  /* table-layout: fixed; */
 }
 .xans-product-detail .infoArea table .sale_box {
   position: absolute;
@@ -1659,8 +1682,9 @@
   margin-right: 5px;
 }
 
-/* 구매버튼 */
-.xans-product-action .action_button {
+/* 구매버튼, 품절버튼 */
+.xans-product-action .action_button,
+.xans-product-action .soldout {
   display: flex;
   gap: 8px;
 }
@@ -1670,11 +1694,13 @@
   max-width: calc((100% - 56px) / 2);
 }
 
-.xans-product-action .action_button .btnNormal.actionWish {
+.xans-product-action .action_button .btnNormal.actionWish,
+.xans-product-action .soldout .btnNormal {
   width: 56px;
   padding: 0;
-  min-width: 56px;
-  padding: 14px 0;
+  /* height: 56px;
+  line-height: 54px;
+  padding: 7px 0; */
 }
 
 .xans-product-action .action_button [class^='btn'] + [class^='btn'] {
@@ -1689,6 +1715,10 @@
   font-weight: 500;
   text-align: center;
   border-radius: 4px;
+}
+.xans-product-action .soldout .btnSubmit {
+  width: calc(100% - 56px);
+  background-color: #d0d0d0;
 }
 
 .mrt10 {
@@ -2035,7 +2065,7 @@
     position: relative;
   }
   #totalProducts tbody td {
-    padding: 15px 0;
+    /* padding: 15px 0; */
   }
   #totalProducts .delete {
     margin-top: 0;
@@ -2117,9 +2147,7 @@
     padding: 23px 0; */
   }
   .xans-product-action .action_button .btnSubmit {
-    flex: none;
-    width: 100%;
-    margin-bottom: 12px;
+    /* width: 100%; */
   }
   .xans-product-action .action_button [class^='btn'] + [class^='btn'] {
     margin-left: 0;
@@ -2128,10 +2156,12 @@
     /* margin-left: 12px !important; */
   }
   .xans-product-action .action_button .btnNormal.actionWish {
-    padding: 12px 0;
+    height: 48px;
+    line-height: 46px;
+    padding: 7px 0;
   }
   .xans-product-action.ec-base-button.gFixed [class^='btn'].sizeM {
-    font-weight: 500;
+    font-weight: 600;
   }
   .xans-product-action .soldout {
     margin: 0;
