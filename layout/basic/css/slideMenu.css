@@ -26,7 +26,7 @@ body.expand #aside {
   overflow: auto;
   overflow-x: hidden;
   min-width: 225px;
-  width: 458px;
+  width: 400px;
   background-color: #fff;
   transition: 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
@@ -159,6 +159,11 @@ body.expand #aside {
     margin: 0 10px 0 0;
     font-size: 14px;
   }
+  /* .navigation-menu__category #slide_add_category {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  } */
   .navigation-menu__board,
   .navigation-menu__category,
   .navigation-menu__project {
@@ -194,13 +199,16 @@ body.expand #aside {
     border-radius: 20px;
     box-sizing: border-box;
   }
+  .navigation-menu__category #slide_add_category {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 /********************* Tablet *********************/
 @media all and (min-width: 768px) and (max-width: 1024px) {
   #aside {
-    left: -458px;
-    width: 458px;
   }
 }
 
@@ -263,8 +271,6 @@ body.expand #aside {
     left: 458px;
   }
   #aside {
-    left: -458px;
-    width: 458px;
   }
 }
 
@@ -275,19 +281,13 @@ body.expand {
   left: 0;
 }
 #aside {
-  left: -730px;
-  width: 730px;
 }
 #aside .navigation-menu {
-  padding: 70px 4%;
 }
 #aside .btnClose {
   top: 22px;
 }
 #aside .navigation_member {
-  background-color: #f5f5f5;
-  text-align: center;
-  margin: 0 auto;
 }
 #aside .navigation_member .navigation_state {
   display: flex;
@@ -296,7 +296,7 @@ body.expand {
   margin: 60px auto 0;
 }
 #aside .navigation_member .navigation_state a {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1;
   color: #1a1a1a;
   display: flex;
@@ -320,9 +320,9 @@ body.expand {
 #aside .navigation-menu__category .view,
 #aside .navigation-menu__project .view {
   display: block;
-  font-size: 18px;
-  padding: 5px 30px 5px 0;
-  color: #1a1a1a;
+  font-size: 16px;
+  padding: 10px 30px 10px 0;
+  color: #333333;
   word-break: keep-all;
   word-wrap: break-word;
 }
@@ -486,7 +486,6 @@ body.expand {
 }
 #aside .navigation-menu__category #slide_add_category li {
   position: relative;
-  margin: 40px 0;
 }
 #aside .navigation-menu__category #slide_add_category li.selected > ul {
   display: block;
@@ -559,34 +558,25 @@ body.expand {
   overflow: hidden !important;
   touch-action: none;
 }
-#aside {
-  left: -80%;
-  width: 80%;
-}
 #aside .navigation-menu {
-  padding: 30px 4%;
+  padding: 30px 15%;
 }
 #aside .navigation_member {
-  padding: 45px 0 23px 0;
+  padding: 70px 0 20px 0;
 }
 #aside .navigation_member .side_logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-left: 15%;
 }
 #aside .navigation_member .side_logo a {
   font-size: 25px;
 }
 #aside .navigation_member .side_logo img {
-  max-width: 200px;
-  max-height: 30px;
+  max-width: 120px;
 }
 #aside .navigation_member .navigation_state {
   margin: 23px auto 0;
 }
-#aside .navigation_member .navigation_state a {
-  font-size: 12px;
-}
+
 #aside .navigation-menu__project ul li,
 #aside .navigation-menu__board ul li,
 #aside .navigation-menu__category .categoryList li {
@@ -595,7 +585,6 @@ body.expand {
 #aside .navigation-menu__board ul li a,
 #aside .navigation-menu__category .view,
 #aside .navigation-menu__project .view {
-  font-size: 15px;
 }
 #aside .navigation-menu__category .categoryList > li.selected .slideSubMenu li {
   margin: 5px 0;
@@ -662,8 +651,6 @@ body.expand {
   transform: rotate(0);
 }
 #aside .navigation-menu__category #slide_add_category li {
-  position: relative;
-  margin: 10px 0;
 }
 #aside .navigation-menu__category #slide_add_category li.selected .sub_cate01 li {
   margin: 5px 0;

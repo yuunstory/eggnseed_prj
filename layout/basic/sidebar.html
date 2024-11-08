@@ -1,47 +1,80 @@
 <aside id="aside" module="layout_slidePackage" data-ez="contents-0av9w0z-1">
-    <!--@css(/layout/basic/css/slideMenu.css)-->
-	<!--@js(/layout/basic/js/slide_menu.js)-->
-	<div class="navigation_member">
-		<div class="side_logo" module="Layout_LogoTop"><a href="/"><img src="{$logo}" alt="{$mall_name}"></a></div>
+  <!--@css(/layout/basic/css/slideMenu.css)-->
+  <!--@js(/layout/basic/js/slide_menu.js)-->
+  <div class="navigation_member">
+    <div class="side_logo" module="Layout_LogoTop">
+      <a href="/"><img src="{$logo}" alt="{$mall_name}" /></a>
+    </div>
 
-		<div class="navigation_state" data-ez-group="top-util-menu" data-ez-role="list">
-			<a data-ez-item="join" module="Layout_statelogoff" href="/member/agreement.html">회원가입</a>
-			<a data-ez-item="login" module="Layout_statelogoff" href="/member/login.html">로그인</a>
-			<a data-ez-item="modify" module="Layout_stateLogon" href="/member/modify.html">내정보수정</a>
-			<a data-ez-item="logout" module="Layout_stateLogon" href="{$action_logout}">로그아웃</a>
-			<a data-ez-item="order" href="/myshop/order/list.html">주문조회</a>
-			<a data-ez-item="mypage" module="Layout_stateLogon" href="/myshop/index.html">마이페이지</a>
-			<a data-ez-item="recent" href="/product/recent_view_product.html">최근본상품</a>
-		</div><!-- //navigation_state -->
-	</div><!-- //navigation_member -->
+    <!-- <div class="navigation_state" data-ez-group="top-util-menu" data-ez-role="list">
+      <a data-ez-item="join" module="Layout_statelogoff" href="/member/agreement.html">회원가입</a>
+      <a data-ez-item="login" module="Layout_statelogoff" href="/member/login.html">로그인</a>
+      <a data-ez-item="modify" module="Layout_stateLogon" href="/member/modify.html">내정보수정</a>
+      <a data-ez-item="logout" module="Layout_stateLogon" href="{$action_logout}">로그아웃</a>
+      <a data-ez-item="order" href="/myshop/order/list.html">주문조회</a>
+      <a data-ez-item="mypage" module="Layout_stateLogon" href="/myshop/index.html">마이페이지</a>
+      <a data-ez-item="recent" href="/product/recent_view_product.html">최근본상품</a>
+    </div> -->
+    <!-- //navigation_state  -->
+  </div>
+  <!-- //navigation_member -->
 
-    <nav class="navigation-menu" role="navigation">
-		<div data-ez-module="menu-side/1"><div id="slideCateList" class="navigation-menu__category">
-  <ul id="slide_add_category"><li><a href="/category/%EC%9C%A0%EC%A0%9C%ED%92%88/43/" class="view">유제품</a></li><li><a href="/category/%ED%96%84-%E2%88%99-%EC%86%8C%EC%8B%9C%EC%A7%80-%E2%88%99-%EC%9C%A1%ED%8F%AC/42/" class="view">햄 ∙ 소시지 ∙ 육포</a></li><li><a href="/category/%EB%B0%9C%ED%9A%A8%EB%A9%B4-%E2%88%99-%EB%B0%9C%ED%9A%A8%EB%B9%B5-%E2%88%99-%EA%B3%81%EB%93%A4%EC%9E%84/44/" class="view">발효면 ∙ 발효빵 ∙ 곁들임</a></li><li><a href="/category/%EA%B1%B4%EA%B0%95%EC%9D%8C%EB%A3%8C-%E2%88%99-%EB%B9%99%EA%B3%BC/45/" class="view">건강음료 ∙ 빙과</a></li><li><a href="/category/%EC%A0%9C%EA%B3%BC%EB%A5%98/46/" class="view">제과류</a></li><li><a href="/category/%EA%B8%B0%ED%83%80/56/" class="view">기타</a></li></ul>
-  </div></div><!-- //menu-side/1 -->
+  <nav class="navigation-menu" role="navigation">
+    <div data-ez-module="menu-side/1">
+      <div id="slideCateList" class="navigation-menu__category">
+        <ul id="slide_add_category">
+          <li><a href="/category/%EC%9C%A0%EC%A0%9C%ED%92%88/43/" class="view">유제품</a></li>
+          <li>
+            <a
+              href="/category/%ED%96%84-%E2%88%99-%EC%86%8C%EC%8B%9C%EC%A7%80-%E2%88%99-%EC%9C%A1%ED%8F%AC/42/"
+              class="view"
+              >햄 ∙ 소시지 ∙ 육포</a
+            >
+          </li>
+          <li>
+            <a
+              href="/category/%EB%B0%9C%ED%9A%A8%EB%A9%B4-%E2%88%99-%EB%B0%9C%ED%9A%A8%EB%B9%B5-%E2%88%99-%EA%B3%81%EB%93%A4%EC%9E%84/44/"
+              class="view"
+              >발효면 ∙ 발효빵 ∙ 곁들임</a
+            >
+          </li>
+          <li>
+            <a href="/category/%EA%B1%B4%EA%B0%95%EC%9D%8C%EB%A3%8C-%E2%88%99-%EB%B9%99%EA%B3%BC/45/" class="view"
+              >건강음료 ∙ 빙과</a
+            >
+          </li>
+          <li><a href="/category/%EC%A0%9C%EA%B3%BC%EB%A5%98/46/" class="view">제과류</a></li>
+          <li><a href="/category/%EA%B8%B0%ED%83%80/56/" class="view">기타</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- //menu-side/1 -->
 
-		<div class="cboth slide_line"></div>
+    <div class="cboth slide_line"></div>
 
-        <div module="Layout_BoardInfo" class="navigation-menu__board">
-			<div class="title">고객센터<button type="button" class="icoCategory">펼침</button></div>
-            <ul class="categoryList">
-                <li><a href="{$link_board_list}">{$board_name}</a> {$board_adult_icon}</li>
-                <li><a href="{$link_board_list}">{$board_name}</a> {$board_adult_icon}</li>
-            </ul>
-        </div><!-- //navigation-menu__board -->
+    <div module="Layout_BoardInfo" class="navigation-menu__board">
+      <div class="title">고객센터<button type="button" class="icoCategory">펼침</button></div>
+      <ul class="categoryList">
+        <li><a href="{$link_board_list}">{$board_name}</a> {$board_adult_icon}</li>
+        <li><a href="{$link_board_list}">{$board_name}</a> {$board_adult_icon}</li>
+      </ul>
+    </div>
+    <!-- //navigation-menu__board -->
 
-		<div module="Layout_multishopList">
-			<button type="button" class="toggle">{$current_language} <i aria-hidden="true" class="icon icoArrowBottom"></i></button>
-			<ul module="Layout_multishopListitem">
-				<li class="{$selected_class}">
-					<a href="//{$shop_domain}/">{$locale_language}</a>
-				</li>
-				<li class="{$selected_class}">
-					<a href="//{$shop_domain}/">{$locale_language}</a>
-				</li>
-			</ul>
-		</div>
-    </nav>
-    <button type="button" class="btnClose"><i aria-hidden="true" class="icon icoClose"></i>닫기</button>
+    <div module="Layout_multishopList">
+      <button type="button" class="toggle">
+        {$current_language} <i aria-hidden="true" class="icon icoArrowBottom"></i>
+      </button>
+      <ul module="Layout_multishopListitem">
+        <li class="{$selected_class}">
+          <a href="//{$shop_domain}/">{$locale_language}</a>
+        </li>
+        <li class="{$selected_class}">
+          <a href="//{$shop_domain}/">{$locale_language}</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <button type="button" class="btnClose"><i aria-hidden="true" class="icon icoClose"></i>닫기</button>
 </aside>
 <!--#ez="1/6"-->
