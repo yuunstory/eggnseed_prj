@@ -1,5 +1,6 @@
 .xans-board-search .form {
   display: flex;
+  position: relative;
 }
 .xans-board-search select,
 .xans-board-search input[type='text'],
@@ -8,7 +9,6 @@
 }
 .xans-board-search #search {
   border-bottom: 1px solid #d6d6d6;
-  position: relative;
   padding-right: 30px;
 }
 .xans-board-search .board_search_btn {
@@ -34,7 +34,7 @@
     width: 175px;
   }
   .xans-board-search .board_search_btn {
-    left: 390px;
+    left: 340px;
   }
   .ec-base-button.gBottom:not(.displaynone) + #boardSearchForm {
     margin: -60px 0 0;
@@ -68,20 +68,10 @@
     flex-wrap: wrap;
   }
   .xans-board-search .board_search_btn {
-    bottom: 140px;
-    right: 20px;
-  }
-  .xans-board-listpackage .xans-board-search .board_search_btn {
     bottom: 0px;
+    right: -10px;
   }
 }
 /********************* Mobile *********************/
 @media all and (max-width: 767px) {
-  .xans-board-search .board_search_btn {
-    bottom: 235px;
-    right: 10px;
-  }
-  .xans-board-listpackage .xans-board-search .board_search_btn {
-    bottom: 0px;
-  }
 }
