@@ -50,7 +50,8 @@
 }
 .xans-order-basketpackage .totalSummary {
   padding: 20px;
-  border: 1px solid #000;
+  border-radius: 5px;
+  border: 1px solid #333333;
 }
 .xans-order-basketpackage .totalSummary__item {
   margin: 0 0 20px;
@@ -67,12 +68,17 @@
   color: #6d6d6d;
 }
 .xans-order-basketpackage .totalSummary__item .title {
-  font-size: 13px;
-  font-weight: normal;
+  font-size: 16px;
+  font-weight: 400;
+  color: #555555;
 }
 .xans-order-basketpackage .totalSummary__item .data {
   text-align: right;
+  font-size: 16px;
+  font-weight: 700;
+  color: #555555;
 }
+
 .xans-order-basketpackage .totalSummary .item .title:before {
   content: '';
   display: inline-block;
@@ -89,13 +95,16 @@
   overflow: hidden;
   margin: 20px 0 0;
   padding: 20px 0 0;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #dedede;
 }
 .xans-order-basketpackage .totalSummary .total .title {
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 400;
 }
 .xans-order-basketpackage .totalSummary .paymentPrice {
   text-align: right;
+  font-size: 24px;
+  font-weight: 700;
 }
 .xans-order-basketpackage .totalSummary .paymentPrice strong,
 .xans-order-basketpackage .totalSummary .paymentPrice span {
@@ -103,7 +112,6 @@
   word-break: break-all;
 }
 .xans-order-basketpackage .totalSummary .paymentPrice strong {
-  font-size: 16px;
 }
 .xans-order-basketpackage .totalSummary .title p .refer,
 .xans-order-basketpackage .totalSummary .title div .refer {
@@ -147,6 +155,11 @@
   font-size: 12px;
   line-height: 1.5;
   text-align: left;
+}
+
+#orderFixArea .ec-base-button a,
+#orderFixItem .ec-base-button a {
+  font-weight: 600;
 }
 
 /********************* Mobile / Tablet *********************/
