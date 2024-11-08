@@ -543,7 +543,7 @@
 
   /* 메인 타이틀 */
   .main_title .main_title_txt01 {
-    font-size: calc(28px + (24 - 28) * ((100vw - 370px) / (1760 - 370)));
+    font-size: calc(24px + (24 - 24) * ((100vw - 370px) / (1760 - 370)));
   }
   .main_title .main_title_txt02 {
     font-size: calc(14px + (16 - 14) * ((100vw - 370px) / (1760 - 370)));
@@ -551,10 +551,10 @@
 
   /* 이미지&텍스트갤러리 */
   .main_image_text_gallery .main_3dan_banner ul li a .main_banner_txt .main_banner_txt01 {
-    font-size: calc(14px + (18 - 14) * ((100vw - 370px) / (1760 - 370)));
+    font-size: calc(16px + (18 - 16) * ((100vw - 370px) / (1760 - 370)));
   }
   .main_image_text_gallery .main_3dan_banner ul li a .main_banner_txt .main_banner_more {
-    font-size: calc(13px + (14 - 13) * ((100vw - 370px) / (1760 - 370)));
+    font-size: calc(12px + (14 - 12) * ((100vw - 370px) / (1760 - 370)));
   }
 
   /* 메인 탭상품 상품진열 */
