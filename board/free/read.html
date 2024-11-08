@@ -72,14 +72,14 @@
     <div class="ec-base-button gBottom gBreak">
       <span class="gLeft">
         <span class="{$config.is_admin|display}">
-          <a href="#none" onclick="{$action_post}" class="btnNormalFix sizeS admin {$config.is_post|display}"
+          <a href="#none" onclick="{$action_post}" class="btnNormalFix sizeM admin {$config.is_post|display}"
             >{$admin_publish_message}</a
           >
-          <a href="#none" onclick="{$action_post}" class="btnNormalFix sizeS admin {$config.not_post|display}"
+          <a href="#none" onclick="{$action_post}" class="btnNormalFix sizeM admin {$config.not_post|display}"
             >{$not_publish_message}</a
           >
-          <a href="#none" onclick="{$action_spam}" class="btnNormalFix sizeS {$is_global_display|display}">스팸신고</a>
-          <a href="#none" onclick="{$action_spam_cancle}" class="btnNormalFix sizeS {$is_global_display|display}"
+          <a href="#none" onclick="{$action_spam}" class="btnNormalFix sizeM {$is_global_display|display}">스팸신고</a>
+          <a href="#none" onclick="{$action_spam_cancle}" class="btnNormalFix sizeM {$is_global_display|display}"
             >스팸해제</a
           >
         </span>
@@ -371,8 +371,8 @@
     -->
   <span class="gColumn">{$board_function_selectbox}</span>
   <span class="gColumn">
-    <a href="#none" class="btnNormal sizeS" onclick="{$action_article_move}">{$article_move}</a>
-    <a href="#none" class="btnNormal sizeS" onclick="{$action_article_copy}">{$article_copy}</a>
+    <a href="#none" class="btnNormal sizeM" onclick="{$action_article_move}">{$article_move}</a>
+    <a href="#none" class="btnNormal sizeM" onclick="{$action_article_copy}">{$article_copy}</a>
   </span>
   <span class="ec-base-help">{$board_function_help|replace:*,}</span>
 </div>
