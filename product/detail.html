@@ -102,14 +102,14 @@
     </div>
 
     <div class="infoArea" data-ez-role="ez-discount-tag">
-      <!-- <div class="headingArea">
+      <div class="headingArea displaynone">
         <div class="icon">
           {$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon}
           {$pickup_icon} {$benefit_icons} {$regular_delivery_icon}
         </div>
         <h1>{$name}</h1>
         <span class="delivery {$delvtype_display|display}">(해외배송 가능상품)</span>
-      </div> -->
+      </div>
       <div class="topLogo {$supply_link_display|display}">
         <span>{$supply_top_logo}</span>
         <a href="#none" onclick="{$supply_go_action}"
@@ -122,11 +122,11 @@
           <p>{$name}</p>
         </div>
         <div class="prdDesc">
-          <p>{$summary_desc} 상품 요약 설명</p>
+          <p>{$simple_desc}</p>
         </div>
         <div class="prdPrice">
           <span class="sale_text"></span>
-          <span>{$product_price|numberformat}원</span>
+          <span class="{$product_price_display|display}">{$product_price|numberformat}원</span>
         </div>
       </div>
 
@@ -345,7 +345,7 @@
         </dd>
       </dl>
 
-      <!-- <div class="guideArea">
+      <div class="guideArea displaynone">
         <p class="info {$limit_display|display}">
           (최소주문수량 {$minimum_limit}개 이상<span class="{$maximum_limit_display|display}">
             / 최대주문수량 {$maximum_limit}개 이하</span
@@ -355,7 +355,7 @@
           ><a href="#none" class="{$size_guide_class}" product_no="{$product_no}"
             >사이즈 가이드 <i aria-hidden="true" class="icon icoArrowRight"></i></a
         ></span>
-      </div> -->
+      </div>
 
       <div class="productSet" module="product_setproduct">
         <!--
@@ -865,11 +865,11 @@
           <caption>
             상품 목록
           </caption>
-          <!-- <colgroup>
+          <colgroup class="displaynone">
             <col style="width: 50%" />
             <col style="width: 20%" />
             <col style="width: 30%" />
-          </colgroup> -->
+          </colgroup>
           <thead>
             <tr>
               <th scope="col">상품명</th>

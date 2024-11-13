@@ -2,7 +2,7 @@
 <div class="section" module="Board_ListPackage_8">
   <!--@css(/css/module/board/listPackage_gallary.css)-->
   <div module="board_title_8">
-    <div class="path">
+    <div class="path displaynone">
       <span>현재 위치</span>
       <ol>
         <li><a href="/">홈</a></li>
@@ -13,9 +13,7 @@
 
     <div class="titleArea">
       <h2>{$board_title} {$board_adult_icon}</h2>
-      <p>{$board_info}</p>
     </div>
-    <p class="imgArea">{$board_top_image}</p>
   </div>
 
   <div module="board_listheader_8" class="ec-base-tab gBlank7 {$list_type_display|display}">
@@ -171,7 +169,7 @@
       <legend>게시물 검색</legend>
       <div class="form">
         {$form.search_date} {$form.search_key} {$form.search}
-        <a href="#none" class="btnNormal" onclick="{$action_search}">찾기</a>
+        <a href="#none" class="btnNormal board_search_btn" onclick="{$action_search}"><i data-feather="search"></i></a>
       </div>
     </fieldset>
   </div>
@@ -199,8 +197,8 @@
   <!--@css(/css/module/board/function.css)-->
   <span class="gColumn">{$board_function_selectbox}</span>
   <span class="gColumn">
-    <a href="#none" class="btnNormal sizeS" onclick="{$action_article_move}">{$article_move}</a>
-    <a href="#none" class="btnNormal sizeS" onclick="{$action_article_copy}">{$article_copy}</a>
+    <a href="#none" class="btnNormal sizeM" onclick="{$action_article_move}">{$article_move}</a>
+    <a href="#none" class="btnNormal sizeM" onclick="{$action_article_copy}">{$article_copy}</a>
   </span>
   <span class="ec-base-help">{$board_function_help|replace:*,}</span>
 </div>

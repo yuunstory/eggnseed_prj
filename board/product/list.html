@@ -2,7 +2,7 @@
 <div class="section" module="Board_ListPackage_4">
   <!--@css(/css/module/board/listPackage.css)-->
   <div module="board_title_4">
-    <div class="path">
+    <div class="path displaynone">
       <span>현재 위치</span>
       <ol>
         <li><a href="/">홈</a></li>
@@ -13,9 +13,7 @@
 
     <div class="titleArea">
       <h2>{$board_title} {$board_adult_icon}</h2>
-      <p>{$board_info}</p>
     </div>
-    <p class="imgArea">{$board_top_image}</p>
   </div>
 
   <div module="Layout_BoardInfo" class="ec-base-tab typeMenu gScroll">
@@ -272,7 +270,7 @@
       <p class="category {$form.product_category_selector_display|display}">{$form.product_category_selector}</p>
       <div class="form">
         {$form.search_date} {$form.search_key} {$form.search}
-        <a href="#none" class="btnNormal" onclick="{$action_search}"><i data-feather="search"></i></a>
+        <a href="#none" class="btnNormal board_search_btn" onclick="{$action_search}"><i data-feather="search"></i></a>
       </div>
     </fieldset>
   </div>
@@ -297,7 +295,7 @@
   <!--@css(/css/module/board/catemove.css)-->
   <span class="gColumn">{$board_catemove_selectbox}</span>
   <span class="gColumn"
-    ><a href="#none" class="btnNormal sizeS" onclick="{$action_category_move}">{$category_move}</a></span
+    ><a href="#none" class="btnNormal sizeM" onclick="{$action_category_move}">{$category_move}</a></span
   >
 </div>
 
