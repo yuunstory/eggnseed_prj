@@ -60,7 +60,7 @@
 
 /* infoArea */
 .xans-product-detail .detailInfo div {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: 24px;
   font-weight: 500;
 }
@@ -398,6 +398,10 @@
   margin: 10px 0 0;
 }
 
+#NaverChk_Button .npay_type_MA_1 {
+  width: 100% !important;
+}
+
 #divNvPointInfo {
   display: none;
   position: absolute;
@@ -720,10 +724,10 @@
 }
 
 .xans-product-detail .infoArea #totalProducts > table > tbody > tr > td:first-child {
-  /* width: 45%; */
-  /* padding: 20px; */
-  word-break: keep-all;
+  width: 30%;
+  padding: 16px 0;
   white-space: normal;
+  word-break: keep-all;
   word-wrap: break-word;
 }
 
@@ -1997,7 +2001,7 @@
 /* 간편결제 */
 #NaverChk_Button,
 #appPaymentButtonBox {
-  margin: 10px 0 0;
+  margin: 20px 0 0;
 }
 
 /* 회원등급 혜택 */
