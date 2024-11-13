@@ -174,3 +174,15 @@
 .login_sns .btnNaver {
   background-image: url('/SkinImg/img/icon_sns_naver.png');
 }
+
+/************ MOBILE  *************/
+@media all and (max-width: 767px) {
+  .xans-member-login .form {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .xans-myshop-orderhistorynologin .login {
+    padding: 0 20px;
+  }
+}
