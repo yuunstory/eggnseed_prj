@@ -296,7 +296,6 @@ a[class^='btnBasic'] {
   [class^='btn'].sizeL {
     padding: 0px 26px;
     font-size: 14px;
-    line-height: 54px;
     font-weight: 500;
   }
   /* width Fix */
@@ -436,8 +435,8 @@ a[class^='btnBasic'] {
   }
   [class^='btn'].sizeL {
     padding: 0px 26px;
-    height: 56px;
-    line-height: 54px;
+    height: 48px;
+    line-height: 48px;
     font-weight: 600;
   }
   /* width Fix */

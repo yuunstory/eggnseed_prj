@@ -447,7 +447,8 @@
 }
 .xans-member-login .login__button a[class^='btn'].sizeL {
   font-size: 16px;
-  height: 56px;
+  height: 48px;
+  line-height: 46px;
 }
 /* .xans-member-login [class^='btn'].gFull + [class^='btn'].gFull {
   margin: 40px 0 0;
@@ -739,9 +740,7 @@
 
 /* 버튼 */
 .ec-base-button [class^='btn'].sizeL {
-  height: 56px;
-  /* padding: 0; */
-  /* line-height: 56px; */
+  height: 48px;
   font-size: 16px;
 }
 .ec-base-button [class^='btn'].sizeM {
