@@ -83,11 +83,13 @@
       <div class="toparea_state" data-ez-group="top-util-menu" data-ez-role="list">
         <a data-ez-item="join" module="Layout_statelogoff" href="/member/agreement.html">회원가입</a>
         <a data-ez-item="login" module="Layout_statelogoff" href="/member/login.html">로그인</a>
-        <!-- <a data-ez-item="modify" module="Layout_stateLogon" href="/member/modify.html">내정보수정</a> -->
+        <a class="displaynone" data-ez-item="modify" module="Layout_stateLogon" href="/member/modify.html"
+          >내정보수정</a
+        >
         <a data-ez-item="logout" module="Layout_stateLogon" href="{$action_logout}">로그아웃</a>
-        <!-- <a data-ez-item="order" href="/myshop/order/list.html">주문조회</a> -->
-        <!-- <a data-ez-item="mypage" module="Layout_stateLogon" href="/myshop/index.html">마이페이지</a> -->
-        <!-- <a data-ez-item="recent" href="/product/recent_view_product.html">최근본상품</a> -->
+        <a class="displaynone" data-ez-item="order" href="/myshop/order/list.html">주문조회</a>
+        <a class="displaynone" data-ez-item="mypage" module="Layout_stateLogon" href="/myshop/index.html">마이페이지</a>
+        <a class="displaynone" data-ez-item="recent" href="/product/recent_view_product.html">최근본상품</a>
         <div class="toparea_state_board">
           <a data-ez-item="board" href="#none">고객센터 <i aria-hidden="true" class="icon icoArrowBottom"></i></a>
           <ul module="Layout_BoardInfo">
@@ -112,25 +114,21 @@
       <div data-ez-module="menu-main/1" data-ez-mode="manual">
         <div class="xans-element- xans-layout xans-layout-category top_category">
           <ul>
-            <li><a href="/category/%EC%9C%A0%EC%A0%9C%ED%92%88/43/">유제품</a></li>
+            <li><a href="/product/list.html?cate_no=43">유제품</a></li>
             <li>
-              <a href="/category/%ED%96%84-%E2%88%99-%EC%86%8C%EC%8B%9C%EC%A7%80-%E2%88%99-%EC%9C%A1%ED%8F%AC/42/"
-                >햄 ∙ 소시지 ∙ 육포</a
-              >
+              <a href="/product/list.html?cate_no=42">햄/소시지/육포</a>
             </li>
             <li>
-              <a
-                href="/category/%EB%B0%9C%ED%9A%A8%EB%A9%B4-%E2%88%99-%EB%B0%9C%ED%9A%A8%EB%B9%B5-%E2%88%99-%EA%B3%81%EB%93%A4%EC%9E%84/44/"
-                >발효면 ∙ 발효빵 ∙ 곁들임</a
-              >
+              <a href="/product/list.html?cate_no=44">발효면/발효빵</a>
             </li>
             <li>
-              <a href="/category/%EA%B1%B4%EA%B0%95%EC%9D%8C%EB%A3%8C-%E2%88%99-%EB%B9%99%EA%B3%BC/45/"
-                >건강음료 ∙ 빙과</a
-              >
+              <a href="/product/list.html?cate_no=78">오일/양념/곁들임</a>
             </li>
-            <li><a href="/category/%EC%A0%9C%EA%B3%BC%EB%A5%98/46/">제과류</a></li>
-            <li><a href="/category/%EA%B8%B0%ED%83%80/56/">기타</a></li>
+            <li>
+              <a href="/product/list.html?cate_no=45">건강음료</a>
+            </li>
+            <li><a href="/product/list.html?cate_no=46">간식</a></li>
+            <li><a href="/product/list.html?cate_no=56">생활용품</a></li>
           </ul>
         </div>
       </div>
