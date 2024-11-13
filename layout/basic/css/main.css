@@ -43,7 +43,7 @@
 
 /* 스마트배너 */
 .xans-smart-banner-admin {
-  margin: 0 auto 120px;
+  margin: 0 auto 80px;
 }
 
 /* 이미지&텍스트갤러리 */
@@ -111,6 +111,10 @@
   background-color: rgb(244, 245, 248);
   aspect-ratio: 390/238;
 }
+.main_image_text_gallery .main_3dan_banner ul li a img {
+  border-radius: 10px;
+}
+
 .main_image_text_gallery .main_3dan_banner ul li a .main_banner_txt {
   width: 100%;
   min-height: 33px;
@@ -512,19 +516,41 @@
 .main_icon_menu {
 }
 .main_icon_menu ul {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  column-gap: 10px;
-  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
 }
-.main_icon_menu ul li a {
+.main_icon_menu ul > li {
+  width: calc((100% / 7) - 10px);
+  margin: 0 5px;
+}
+.main_icon_menu ul > li > a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
-.main_icon_menu ul li img {
-  width: 40px;
-  height: 40px;
+
+.main_icon_menu ul > li > a .thumb {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+  position: relative;
+}
+.main_icon_menu ul > li > a .thumb img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 52px;
+  height: auto;
+}
+.main_icon_menu ul > li > a .txt14 {
+  width: 100%;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  white-space: normal;
+  margin: 8px auto;
 }
 
 @media all and (min-width: 1025px) {
@@ -571,6 +597,7 @@
   }
 }
 
+/*************** MOBILE/TABLET ***************/
 @media all and (max-width: 1024px) {
   /* 스마트배너 */
   .xans-smart-banner-admin {
@@ -855,11 +882,9 @@
   }
 
   /* 메인페이지 아이콘 메뉴 */
-  .main_icon_menu ul {
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 20px;
-  }
-  .main_icon_menu ul li {
+  .main_icon_menu {
+    width: 92%;
+    margin: 0 auto;
   }
 }
 
@@ -914,6 +939,21 @@
   /* 메인 지도 */
   .main_map {
     margin: 0 auto 50px;
+  }
+
+  /* 메인페이지 아이콘 메뉴 */
+  .main_icon_menu ul {
+  }
+  .main_icon_menu ul > li {
+    width: calc((100% / 4) - 20px);
+    margin: 0 10px 20px 10px;
+  }
+  .main_icon_menu ul > li > a .thumb {
+    width: 60px;
+    height: 60px;
+  }
+  .main_icon_menu ul > li > a .thumb img {
+    width: 40px;
   }
 }
 
