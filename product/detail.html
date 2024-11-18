@@ -20,8 +20,9 @@
   class="titleArea display_tablet_only"
   data-ez-module="product-detail-head-title-mobile/1"
   data-ez="contents-043cljk-1"
+  module="product_detail"
 >
-  <h2>상품상세 정보</h2>
+  <h2>{$name}</h2>
 </div>
 <div class="section" module="product_detail" data-ez="contents-120heqb-1">
   <!--@css(/css/module/product/detail.css)-->
@@ -1010,7 +1011,7 @@
           >
             <i data-feather="heart"></i>
           </button>
-          <button type="button" class="btnSubmit sizeL gFull {$soldout_display|display}">SOLD OUT</button>
+          <button type="button" class="btnSubmit sizeL gFull soldoutBtn {$soldout_display|display}">SOLD OUT</button>
         </div>
         <a
           href="/board/inquiry/write.html{$inquiry_param}"
@@ -1020,7 +1021,11 @@
         <!-- 네이버 체크아웃 구매 버튼  -->
         <div id="NaverChk_Button"></div>
         <div id="{$app_payment_button_box_id}"></div>
-        <div module="myshop_asyncbenefit" class="ec-base-box typeMember gMessage {$display_benefit|display}">
+        <!-- 회원 혜택 -->
+        <div
+          module="myshop_asyncbenefit"
+          class="ec-base-box typeMember gMessage {$display_benefit|display} displaynone"
+        >
           <div class="information {$display_benefit|display}">
             <strong class="thumbnail"
               ><img
@@ -1033,7 +1038,10 @@
             /></strong>
             <div class="description">
               <p class="message {$display_benefit|display}">안녕하세요. {$member_name}님!</p>
-              <p class="member">고객님의 회원등급은 <em>{$group_name}</em> 입니다.</p>
+              <p class="member">
+                고객님의 회원등급은
+                <em>{$group_name}</em> 입니다.
+              </p>
               <p class="{$display_no_benefit|display} {$display_no_benefit_class}">
                 <strong>{$dc_pay} {$dc_min_price}</strong> 구매시 <strong>{$dc_price}{$dc_type}</strong>을 {$use_dc}
                 받으실 수 있습니다. {$dc_max_percent}
@@ -1068,7 +1076,7 @@
           >
             WISH LIST
           </button> -->
-          <button type="button" class="btnSubmit sizeM {$soldout_display|display} soldout">SOLD OUT</button>
+          <button type="button" class="btnSubmit sizeM {$soldout_display|display} soldoutBtn">SOLD OUT</button>
         </div>
       </div>
     </div>
@@ -1211,7 +1219,7 @@
                 <col style="width: 70px" class="RW" />
                 <col style="width: auto" />
                 <col style="width: 100px" />
-                <col style="width: 100px" />
+                <col style="width: 120px" />
                 <col style="width: 80px" />
                 <col style="width: 80px" class="{$use_point_display|display}" />
               </colgroup>
