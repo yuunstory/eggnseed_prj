@@ -1326,6 +1326,9 @@ a:hover {
   #header.fixed .inner .top_nav_box .top_logo {
     margin: 0 auto;
   }
+  #header .inner .top_nav_box .top_mypage a.xans-layout-orderbasketcount .count {
+    top: 33px;
+  }
 
   /* 하단 */
   .footer_margin {
@@ -1614,7 +1617,7 @@ a:hover {
 /********************* PC *********************/
 @media all and (max-width: 1553px) {
   #quick {
-    display: none;
+    display: block;
   }
 }
 
