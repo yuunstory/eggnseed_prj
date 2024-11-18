@@ -46,12 +46,15 @@ function fixedHeader() {
   var fixed_margin = document.getElementById('contents');
   var scrollY = window.pageYOffset || document.documentElement.scrollTop;
   var header_height = document.getElementById('header').scrollHeight + 'px';
-
+  // var header_topArea = document.querySelector('.toparea.display_pc_only');
   if (scrollY > header.offsetTop) {
     header.classList.add('fixed');
+    // header_topArea.style.display = 'none';
     fixed_margin.style.marginTop = header_height;
   } else {
     header.classList.remove('fixed');
+
+    // header_topArea.style.display = 'none';
     fixed_margin.style.marginTop = '0px';
   }
 }
@@ -145,28 +148,30 @@ function bottomNav() {
     document.body.classList.add('button--fixed');
   }
 
-  // window.addEventListener('scroll', function () {
-  //   var scroll = window.pageYOffset || document.documentElement.scrollTop;
-  //   var nav = document.querySelector('.bottom-nav');
-  //   if (scroll > lastScrollTop) {
-  //     nav.classList.add('bottom-nav--hide');
-  //   } else {
-  //     nav.classList.remove('bottom-nav--hide');
-  //   }
-  //   // scroll bottom
-  //   if (scroll === document.body.scrollHeight - document.documentElement.offsetHeight) {
-  //     nav.classList.remove('bottom-nav--hide');
-  //   }
-  //   lastScrollTop = scroll <= 0 ? 0 : scroll;
+  /*
+  window.addEventListener('scroll', function () {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop;
+    var nav = document.querySelector('.bottom-nav');
+    if (scroll > lastScrollTop) {
+      nav.classList.add('bottom-nav--hide');
+    } else {
+      nav.classList.remove('bottom-nav--hide');
+    }
+    // scroll bottom
+    if (scroll === document.body.scrollHeight - document.documentElement.offsetHeight) {
+      nav.classList.remove('bottom-nav--hide');
+    }
+    lastScrollTop = scroll <= 0 ? 0 : scroll;
 
-  //   // top button
-  //   var currentScrollPercentage = getCurrentScrollPercentage();
-  //   if (currentScrollPercentage > 30) {
-  //     btnTop.classList.add('bottom-nav__top--show');
-  //   } else {
-  //     btnTop.classList.remove('bottom-nav__top--show');
-  //   }
-  // });
+    // top button
+    var currentScrollPercentage = getCurrentScrollPercentage();
+    if (currentScrollPercentage > 30) {
+      btnTop.classList.add('bottom-nav__top--show');
+    } else {
+      btnTop.classList.remove('bottom-nav__top--show');
+    }
+  });
+  */
 
   btnTop.addEventListener('click', function () {
     window.scrollTo({
