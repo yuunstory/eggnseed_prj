@@ -176,6 +176,12 @@
   margin-top: 0;
 }
 
+/* Table - typeList */
+
+.ec-base-table.typeList td.subject {
+  font-weight: 600;
+}
+
 /********************* Mobile / Tablet *********************/
 @media all and (max-width: 1024px) {
   /* gFlow */

@@ -45,6 +45,9 @@
 .xans-product-additional .minor .button {
   margin: -7px 0 0;
 }
+.xans-product-additional tr[id^='product-review-read'] {
+  background: #f9f9f9;
+}
 .xans-product-additional .view {
   position: relative;
   z-index: 1;
@@ -53,7 +56,7 @@
   line-height: 22px;
   text-align: left;
   color: #000;
-  background: #f9f9f9;
+  /* background: #f9f9f9; */
 }
 .xans-product-additional .view .alert {
   margin: 0 0 10px;
@@ -280,7 +283,7 @@
     padding-right: 45px;
   }
   .xans-product-additional .view {
-    padding: 25px 25px 0;
+    padding: 25px 80px 0;
   }
   .xans-product-additional .view.secret {
     padding-bottom: 25px;
