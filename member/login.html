@@ -52,34 +52,44 @@
       <a href="#none" onclick="{$action_func_login}" class="btnLogin sizeL gFull">로그인</a>
       <a href="/member/agreement.html" class="btnJoin sizeL gFull">회원가입</a>
       <!-- <p class="link " id="noMemberWrap"> -->
-      <a class="{$display_nomember|display}" href="{$returnUrl}" onclick="{$action_nomember_order}"></a>
+      <a
+        class="btnNormal gFull sizeL noMember_buy {$display_nomember|display}"
+        href="{$returnUrl}"
+        onclick="{$action_nomember_order}"
+        >비회원 구매</a
+      >
       <!-- </p> -->
     </div>
     <div class="login_sns">
-      <a href="#none" onclick="{$kakao_func_login}" class="{$display_kakao|display} btnKakao"> </a>
-      <a href="#none" onclick="{$naver_func_login}" class="{$display_naver|display} btnNaver"> </a>
+      <h2>간편 로그인/회원가입</h2>
+      <div class="login_sns_wrap">
+        <a href="#none" onclick="{$kakao_func_login}" class="{$display_kakao|display} btnKakao"> </a>
+        <a href="#none" onclick="{$naver_func_login}" class="{$display_naver|display} btnNaver"> </a>
 
-      <a href="#none" onclick="{$facebook_func_login}" class="{$display_facebook|display}"
-        ><img
-          src="//img.echosting.cafe24.com/design/module/member/login/3374/btn_facebook_login.gif"
-          alt="페이스북 로그인"
-      /></a>
-      <a href="#none" onclick="{$google_func_login}" class="{$display_google|display}"
-        ><img src="//img.echosting.cafe24.com/design/module/member/login/3374/btn_google_login.gif" alt="구글 로그인"
-      /></a>
-      <a href="#none" onclick="{$line_func_login}" class="{$display_line|display}"
-        ><img
-          src="//img.echosting.cafe24.com/design/module/member/login/3374/btn_line_login.gif"
-          alt="LINE 로그인"
-          loading="lazy"
-          ez-prevent="img"
-      /></a>
-      <a href="#none" onclick="{$apple_func_login}" class="{$display_apple|display}"
-        ><img src="//img.echosting.cafe24.com/design/module/member/login/3374/btn_apple_login.gif" alt="Apple 로그인"
-      /></a>
-      <a href="#none" onclick="{$yahoojp_func_login}" class="{$display_yahoojp|display}"
-        ><img src="//img.echosting.cafe24.com/design/module/member/login/3374/btn_yahoo_login.gif" alt="Yahoo! 로그인"
-      /></a>
+        <a href="#none" onclick="{$facebook_func_login}" class="{$display_facebook|display}"
+          ><img
+            src="//img.echosting.cafe24.com/design/module/member/login/3374/btn_facebook_login.gif"
+            alt="페이스북 로그인"
+        /></a>
+        <a href="#none" onclick="{$google_func_login}" class="{$display_google|display}"
+          ><img src="//img.echosting.cafe24.com/design/module/member/login/3374/btn_google_login.gif" alt="구글 로그인"
+        /></a>
+        <a href="#none" onclick="{$line_func_login}" class="{$display_line|display}"
+          ><img
+            src="//img.echosting.cafe24.com/design/module/member/login/3374/btn_line_login.gif"
+            alt="LINE 로그인"
+            loading="lazy"
+            ez-prevent="img"
+        /></a>
+        <a href="#none" onclick="{$apple_func_login}" class="{$display_apple|display}"
+          ><img src="//img.echosting.cafe24.com/design/module/member/login/3374/btn_apple_login.gif" alt="Apple 로그인"
+        /></a>
+        <a href="#none" onclick="{$yahoojp_func_login}" class="{$display_yahoojp|display}"
+          ><img
+            src="//img.echosting.cafe24.com/design/module/member/login/3374/btn_yahoo_login.gif"
+            alt="Yahoo! 로그인"
+        /></a>
+      </div>
     </div>
   </fieldset>
 </div>
