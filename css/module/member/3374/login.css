@@ -154,12 +154,17 @@
   color: #ea5514;
 }
 
-.login_sns {
+.login_sns h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.login_sns .login_sns_wrap {
   display: flex;
   justify-content: center;
   gap: 16px;
 }
-.login_sns > a {
+.login_sns .login_sns_wrap > a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -174,12 +179,20 @@
 .login_sns .btnNaver {
   background-image: url('/SkinImg/img/icon_sns_naver.png');
 }
+.xans-member-login .login__button .noMember_buy {
+  /* border: 1px solid #ea5514; */
+  /* color: #ea5514; */
+  /* border: 1px solid #333; */
+}
 
 /************ MOBILE  *************/
 @media all and (max-width: 767px) {
   .xans-member-login .form {
     width: 100%;
     padding: 0 20px;
+  }
+  .login_sns h2 {
+    font-size: 16px;
   }
 
   .xans-myshop-orderhistorynologin .login {
