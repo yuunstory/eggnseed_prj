@@ -35,8 +35,9 @@ a[class^='btnSubmit'] {
   letter-spacing: 0;
   text-align: center;
   white-space: nowrap;
-  /* color: #fff;
-  background-color: #ea5514; */
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #ea5514;
 }
 [class^='btnEm'],
 a[class^='btnEm'] {
@@ -100,7 +101,7 @@ a[class^='btnBasic'] {
   color: #999;
 }
 [class^='btn'] + [class^='btn'] {
-  /* margin-left: 6px; */
+  margin-left: 10px;
 }
 /* sizeQty */
 [class^='btn'].sizeQty {
@@ -435,8 +436,8 @@ a[class^='btnBasic'] {
   }
   [class^='btn'].sizeL {
     padding: 0px 26px;
-    height: 48px;
-    line-height: 48px;
+    height: 56px;
+    font-size: 16px;
     font-weight: 600;
   }
   /* width Fix */
