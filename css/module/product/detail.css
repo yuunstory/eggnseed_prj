@@ -115,6 +115,9 @@
 .xans-product-detaildesign > table > tbody > tr:nth-child(4) > th {
   line-height: 24px;
 }
+.xans-product-detaildesign > table > tbody > tr > th {
+  line-height: 24px;
+}
 
 .xans-product-detail .infoArea table {
   border: 0;
@@ -402,7 +405,8 @@
 }
 
 #NaverChk_Button .npay_type_MA_1,
-#NaverChk_Button .npay_type_A_2 {
+#NaverChk_Button .npay_type_A_2,
+.npay_type_A_2 {
   width: 100% !important;
 }
 
@@ -740,27 +744,26 @@
   grid-column: 2/3;
   grid-row: 2/3;
 }
+#totalProducts tbody tr > td:nth-child(3).right {
+}
 
 #totalProducts tbody tr.option_product > td:nth-child(1) {
   grid-column: 1/2;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
-#totalProducts tbody tr.option_product > td:nth-child(2) {
+#totalProducts tbody tr.option_product > td:nth-child(2).right {
   grid-column: 2/3;
   grid-row: 1/2;
   margin-bottom: 5px;
   margin-right: 40px;
 }
-
-#totalProducts tbody tr.option_product > td.center {
+#totalProducts tbody tr > td:nth-child(3).center {
   position: absolute;
   top: -100px;
   right: 0px;
 }
 
 .xans-product-detail .infoArea #totalProducts > table > tbody > tr > td:first-child {
-  /* width: 30%; */
-  /* padding: 16px 0; */
   white-space: normal;
 }
 .xans-product-detail .infoArea #totalProducts > table > tbody > tr > td.right {
@@ -867,11 +870,14 @@
   margin: -4px 0 0 0;
   background: #000;
 }
+#totalProducts tbody tr > td:nth-child(3).center .delete {
+  position: unset;
+}
+
 #totalProducts .delete {
-  /* position: absolute;
-  top: 20px; */
-  /* transform: translateY(-50%); */
-  /* right: 20px; */
+  position: absolute;
+  top: 20px;
+  right: 20px;
   width: 17px;
   height: 17px;
   vertical-align: middle;
