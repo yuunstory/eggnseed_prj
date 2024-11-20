@@ -30,6 +30,10 @@
   <!--
 		$coupon_download_page = /coupon/coupon_productdetail.html
     -->
+  <!--
+        ※ 옵션 선택시 품목의 할인가로 표시됩니다.
+        $use_item_sale_price = T
+    -->
   <div class="detailArea">
     <div class="imgArea" module="product_image">
       <!--@js(/js/module/product/product_image.js)-->
@@ -126,8 +130,8 @@
           <p>{$simple_desc}</p>
         </div>
         <div class="prdPrice">
-          <span class="sale_text"></span>
-          <span class="{$product_price_display|display}">{$product_price|numberformat}원</span>
+          <span class="">{$product_price|numberformat}원</span>
+          <span class="sale_text">{$prd_price_sale}</span>
         </div>
       </div>
 
