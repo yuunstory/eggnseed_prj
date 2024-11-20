@@ -44,7 +44,7 @@
       <li class="{$domestic_select} {$domestic_display|display}">
         <a href="/order/basket.html">국내배송상품 ({$basket_count})</a>
       </li>
-      <li class="{$oversea_select} {$oversea_display|display}">
+      <li class="{$oversea_select} {$oversea_display|display} displaynone">
         <a href="/order/basket.html?delvtype=B">해외배송상품 ({$basket_oversea_count})</a>
       </li>
     </ul>
@@ -1835,7 +1835,9 @@
               <a href="#none" class="btnNormal sizeS" onclick="{$action_estimate}" link="/estimate/userform.html"
                 >견적서출력</a
               >
-              <a href="#none" onclick="{$action_move_oversea}" class="btnNormal sizeS">해외장바구니로 이동</a>
+              <a href="#none" onclick="{$action_move_oversea}" class="btnNormal sizeS displaynone"
+                >해외장바구니로 이동</a
+              >
               <a
                 href="#none"
                 onclick="{$action_order_store_pickup_select}"
