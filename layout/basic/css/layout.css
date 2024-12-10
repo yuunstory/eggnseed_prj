@@ -202,7 +202,7 @@ a:hover {
 }
 #header .inner {
   max-width: 1760px;
-  width: 92%;
+  width: 90%;
   margin: 0 auto;
   padding: 0;
   display: flex;
@@ -430,7 +430,7 @@ a:hover {
 #header .inner .top_nav_box .top_category > ul > li {
   display: flex;
   align-items: center;
-  padding: 0 25px;
+  padding: 0 15px;
   position: relative;
   height: 50px;
 }
@@ -868,14 +868,12 @@ a:hover {
   line-height: 2;
 }
 #footer .inner .bt_cscenter .bt_txt01 {
-  font-size: 12px;
   font-weight: 400;
   color: #1a1a1a;
   margin-bottom: 10px;
   line-height: 2;
 }
 #footer .inner .bt_cscenter .bt_txt02 {
-  font-size: 12px;
   font-weight: 400;
   color: #3a3a3a;
   margin-bottom: 10px;
@@ -896,23 +894,18 @@ a:hover {
 #footer .inner .bt_bank .title {
   font-size: 14px;
   font-weight: 700;
-  color: #1a1a1a;
   margin-bottom: 10px;
   line-height: 2;
 }
 #footer .inner .bt_bank .title_sub {
-  font-size: 12px;
   font-weight: 400;
-  color: #3a3a3a;
   line-height: 2;
 }
 #footer .inner .bt_bank .title_sub > strong {
   font-weight: 600;
 }
 #footer .inner .bt_bank .bt_txt02 {
-  font-size: 12px;
   font-weight: 400;
-  color: #3a3a3a;
   line-height: 2;
 }
 
@@ -959,9 +952,8 @@ a:hover {
   flex-wrap: wrap;
   justify-content: flex-start;
   max-width: 500px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
-  color: #1a1a1a;
   line-height: 2;
 }
 #footer .inner .bt_info .bt_info_list a {
