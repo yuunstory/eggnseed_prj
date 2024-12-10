@@ -108,7 +108,7 @@
   display: flex;
   align-items: flex-start;
 }
-.xans-product-detaildesign > table > tbody > tr:nth-child(-n + 3) {
+.xans-product-detaildesign > table > tbody > tr:nth-child(-n + 2) {
   display: none;
 }
 
@@ -132,14 +132,14 @@
 
 .xans-product-detail .infoArea th {
   font-weight: normal;
-  width: 128px;
+  width: 140px;
   text-align: left;
   vertical-align: top;
   padding: 18px 0;
 }
 .xans-product-detail .infoArea td {
   vertical-align: middle;
-  padding: 18px 0;
+  padding: 18px 0px;
   line-height: 24px;
 }
 .xans-product-detail .infoArea img {
@@ -170,7 +170,6 @@
   border: 1px solid #e1e1e1;
 }
 .xans-product-detail .infoArea td #span_product_coupon_dc_price {
-  color: #070705;
 }
 .xans-product-detail .infoArea td.fileInfo {
   color: #757575;
@@ -1947,6 +1946,9 @@
 .swiper-container.relation_slide ul .thumbnail {
   margin: 0;
 }
+.swiper-container.relation_slide ul .thumbnail a img {
+  height: 240px !important;
+}
 .swiper-container.relation_slide ul > li .prdList__item {
   margin: 0;
 }
@@ -1956,10 +1958,13 @@
   line-height: 1.2;
 }
 .swiper-container.relation_slide ul > li .description .price {
-  font-size: 20px;
+  font-size: 16px;
   margin-top: 10px;
   color: #1a1a1a;
   font-weight: 700;
+}
+.swiper-container.relation_slide ul > li .description .price .salePrice {
+  color: #ea5514;
 }
 
 /* 게시판 */
@@ -2252,11 +2257,14 @@
     padding: 0;
     min-height: auto;
   }
+  .swiper-container.relation_slide ul .thumbnail a img {
+    height: 167px !important;
+  }
   .swiper-container.relation_slide ul > li .description .name a {
-    font-size: 13px;
+    font-size: 14px;
   }
   .swiper-container.relation_slide ul > li .description .price {
-    font-size: 13px;
+    font-size: 14px;
   }
   .relation .swiper-button-prev,
   .relation .swiper-button-next {
@@ -2296,12 +2304,13 @@
   }
   .xans-product-additional .view .ec-base-button a {
     margin-top: 8px;
-    flex: 1;
+    flex: unset;
   }
   .xans-product-additional .view .ec-base-button .gLeft,
   .xans-product-additional .view .ec-base-button .gRight {
     float: none;
     display: flex;
+    justify-content: flex-end;
   }
 
   /* 쿠폰 */
