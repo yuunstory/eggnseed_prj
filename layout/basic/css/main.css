@@ -520,8 +520,8 @@
   flex-wrap: wrap;
 }
 .main_icon_menu ul > li {
-  width: calc((100% / 8) - 10px);
-  margin: 0 5px;
+  width: calc((100% / 5) - 10px);
+  margin: 10px 5px;
 }
 .main_icon_menu ul > li > a {
   display: flex;
