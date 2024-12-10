@@ -29,9 +29,7 @@
   <!--@js(/js/module/product/detail.js)-->
   <!--
 		$coupon_download_page = /coupon/coupon_productdetail.html
-    -->
-  <!--
-        ※ 옵션 선택시 품목의 할인가로 표시됩니다.
+     ※ 옵션 선택시 품목의 할인가로 표시됩니다.
         $use_item_sale_price = T
     -->
   <div class="detailArea">
@@ -864,7 +862,7 @@
           </li>
         </ul>
       </div>
-
+      <!-- #totalProducts -->
       <div id="{$total.total_id}" class="{$total.total_display|display}">
         <table border="1">
           <caption>
@@ -1142,8 +1140,9 @@
                 <div class="description">
                   <div class="name"><a href="{$link_product_detail}">{$name}</a></div>
                   <div class="price">
-                    <span class="salePrice {$sale_price_display|display}">{$disp_sale_price}</span
-                    ><span class="prdPrice {$product_sale_strike}">{$disp_product_price}{$product_tax_type_text}</span>
+                    <span class="prdPrice {$product_sale_strike}">{$disp_product_price}{$product_tax_type_text}</span>
+                    &nbsp;&nbsp;
+                    <span class="salePrice {$sale_price_display|display}">{$disp_sale_price}</span>
                   </div>
                 </div>
               </div>
@@ -1158,8 +1157,9 @@
                 <div class="description">
                   <div class="name"><a href="{$link_product_detail}">{$name}</a></div>
                   <div class="price">
-                    <span class="salePrice {$sale_price_display|display}">{$disp_sale_price}</span
-                    ><span class="prdPrice {$product_sale_strike}">{$disp_product_price}{$product_tax_type_text}</span>
+                    <span class="prdPrice {$product_sale_strike}">{$disp_product_price}{$product_tax_type_text}</span>
+                    &nbsp;&nbsp;
+                    <span class="salePrice {$sale_price_display|display}">{$disp_sale_price}</span>
                   </div>
                 </div>
               </div>
@@ -1223,7 +1223,7 @@
                 <col style="width: 70px" class="RW" />
                 <col style="width: auto" />
                 <col style="width: 100px" />
-                <col style="width: 120px" />
+                <col style="width: 120px" class="displaynone" />
                 <col style="width: 80px" />
                 <col style="width: 80px" class="{$use_point_display|display}" />
               </colgroup>
@@ -1232,7 +1232,7 @@
                   <th scope="col" class="RW">번호</th>
                   <th scope="col">제목</th>
                   <th scope="col">작성자</th>
-                  <th scope="col">작성일</th>
+                  <th class="displaynone" scope="col">작성일</th>
                   <th scope="col">조회</th>
                   <th scope="col" class="{$use_point_display|display}">평점</th>
                 </tr>
@@ -1246,7 +1246,7 @@
                     {$icon_file}<span class="comment">{$comment_count}</span>{$icon_hit}{$icon_new}
                   </td>
                   <td>{$member_icon} {$writer}</td>
-                  <td>{$write_date}</td>
+                  <td class="displaynone">{$write_date}</td>
                   <td>{$hit_count}</td>
                   <td class="{$use_point_display|display}">
                     <img
@@ -1265,7 +1265,7 @@
                     {$icon_file}<span class="comment">{$comment_count}</span>{$icon_hit}{$icon_new}
                   </td>
                   <td>{$member_icon} {$writer}</td>
-                  <td>{$write_date}</td>
+                  <td class="displaynone">{$write_date}</td>
                   <td>{$hit_count}</td>
                   <td class="{$use_point_display|display}">
                     <img
