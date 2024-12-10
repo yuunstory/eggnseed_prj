@@ -131,11 +131,14 @@
   vertical-align: top;
   position: relative;
 }
+.ec-base-box.typeProduct .information {
+  padding-left: 20px;
+}
 .ec-base-box.typeProduct .thumbnail {
-  width: 85px;
+  width: 100px;
 }
 .ec-base-box.typeProduct .thumbnail img {
-  max-width: 65px;
+  /* max-width: 65px; */
 }
 
 /********************* Mobile / Tablet *********************/

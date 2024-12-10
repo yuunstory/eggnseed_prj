@@ -6,12 +6,11 @@
   border-top: 0;
 }
 .xans-board-read .ec-base-table .head {
-  padding: 30px 0;
+  padding: 30px;
   border-bottom: 1px solid #eaeaea;
 }
 .xans-board-read .ec-base-table .head h3 {
   font-size: 18px;
-  font-weight: normal;
 }
 .xans-board-read .ec-base-table .description {
   margin: 15px 0 0;
@@ -33,11 +32,11 @@
   text-decoration: none;
 }
 .xans-board-read .ec-base-table .etcArea .txtNum {
-  font-size: 13px;
+  font-size: 14px;
   color: #6d6d6d;
 }
 .xans-board-read .ec-base-table .detail {
-  padding: 30px 20px;
+  padding: 30px;
   word-break: break-all;
   line-height: normal;
   font-size: 16px;
@@ -79,9 +78,9 @@
   margin: 0 0 40px;
 }
 .xans-board-product .information h3 {
-  margin: 0 0 2px;
+  margin-bottom: 10px;
   padding: 0 120px 0 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 .xans-board-product #sPrdCommonImg {
   position: absolute;
